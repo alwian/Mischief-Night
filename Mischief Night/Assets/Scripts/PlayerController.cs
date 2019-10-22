@@ -15,7 +15,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float movementForce;
     [SerializeField] Collider physicsCollider;
     [SerializeField] PhysicMaterial movingMaterial; 
-    [SerializeField] PhysicMaterial stillMaterial; 
+    [SerializeField] PhysicMaterial stillMaterial;
+
+    [Header("Enable/Disable")]
+    public bool enablePlayerControl = true;
+    public bool enableCameraControl = true;
+
 
     private Player player;
     new private Rigidbody rigidbody;
@@ -31,6 +36,9 @@ public class PlayerController : MonoBehaviour
     float cameraRotation = 0f;
     private void Update()
     {
+        if (!enableCameraControl)
+            return;
+
         // Input
         float xInput, yInput;
         xInput = Input.GetAxis("Mouse X");
@@ -47,6 +55,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!enablePlayerControl)
+            return;
+
         // Input
         float xInput, yInput;
         xInput = Input.GetAxis("Horizontal");
