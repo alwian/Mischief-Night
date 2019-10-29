@@ -86,8 +86,6 @@ public class PlayerInteraction : MonoBehaviour
             interactable = hit.collider.GetComponentInParent<IInteractable>();
             examinable = hit.collider.GetComponentInParent<IExaminable>();
             physObject = hit.collider.GetComponentInParent<IPhysicsObject>();
-
-            Debug.Log(hit.collider.name);
         }
         else
         {

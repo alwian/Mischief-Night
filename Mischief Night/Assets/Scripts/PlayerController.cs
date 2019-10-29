@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float maxCameraRot = 80f;
 
     [Header("Physics Options")]
-    [SerializeField] float movementForce;
+    [SerializeField] float movementForce = 100f;
+    [SerializeField] float maxMovementSpeed = 5f;
     [SerializeField] Collider physicsCollider;
     [SerializeField] PhysicMaterial movingMaterial; 
     [SerializeField] PhysicMaterial stillMaterial;
@@ -59,15 +60,31 @@ public class PlayerController : MonoBehaviour
             return;
 
         // Input
-        float xInput, yInput;
-        xInput = Input.GetAxis("Horizontal");
-        yInput = Input.GetAxis("Vertical");
+        Vector3 input = new Vector3 (
+            Input.GetAxis("Horizontal"),
+            0f,
+            Input.GetAxis("Vertical")
+        );
 
-        if (xInput == 0f && yInput == 0f)
+        if (input.sqrMagnitude > 1f)
+            input = input.normalized;
+
+        if (input.sqrMagnitude == 0f)
             physicsCollider.material = stillMaterial;
         else
             physicsCollider.material = movingMaterial;
 
-        rigidbody.AddRelativeForce(new Vector3(xInput, 0f, yInput) * movementForce * Time.fixedDeltaTime, ForceMode.Impulse);
+        rigidbody.AddRelativeForce(input * movementForce * Time.fixedDeltaTime, ForceMode.Impulse);
+
+        // Get the velocity and take out the gravity
+        var vel = rigidbody.velocity;
+        var grav = vel.y;
+        vel.y = 0;
+
+        // Clamp the gravity-less velocity and reapply gravity
+        vel = Vector3.ClampMagnitude(vel, maxMovementSpeed);
+        vel.y = grav;
+
+        rigidbody.velocity = vel;
     }
 }
