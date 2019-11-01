@@ -9,6 +9,9 @@ public class Patrol : MonoBehaviour
     public Transform[] points;
     private NavMeshAgent agent;
     private int nextPoint = 0;
+    private bool patrolling = true;
+    private bool onPath = true;
+    public float searchRadius = 5;
 
     readonly Color[] colors = new Color[5]
     {
@@ -22,11 +25,12 @@ public class Patrol : MonoBehaviour
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.autoBraking = false;
+        agent.autoBraking = true;
     }
 
     private void GoToNextPoint()
     {
+
         if (points.Length > 1)
         {
             agent.SetDestination(points[nextPoint].position);
@@ -36,14 +40,44 @@ public class Patrol : MonoBehaviour
 
     private void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (!agent.pathPending && agent.remainingDistance < 0.5f && patrolling)
+        {
+
+            GoToNextPoint();
+            onPath = true;
+        }
+
+        if (!patrolling && agent.remainingDistance < 0.5f)
         {
             GoToNextPoint();
+            patrolling = true;
+
+        }
+
+        DetectPlayer();
+    }
+
+    private void DetectPlayer()
+    {
+        if (patrolling && onPath)
+        {
+            foreach (Collider hit in Physics.OverlapSphere(transform.position, searchRadius))
+            {
+                if (hit.gameObject.tag == "Player")
+                {
+                    patrolling = false;
+                    onPath = false;
+                    agent.SetDestination(hit.gameObject.transform.position);
+                }
+            }
         }
     }
 
     private void OnDrawGizmos()
     {
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireSphere(transform.position, searchRadius);
+
         if (points.Length >= 2) {
             for (int i = 0; i < points.Length - 1; i++)
             {
