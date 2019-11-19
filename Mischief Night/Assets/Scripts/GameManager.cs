@@ -10,20 +10,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] Player playerPrefab;
     [SerializeField] Transform spawnPoint;
 
-    public GameManager()
+    private void Awake()
     {
         if (!Instance)
             Instance = this;
-    }
-
-    private void Awake()
-    {
-        if (Instance != this)
+        else
         {
             Debug.Log("Destroying duplicate GameManager...");
             Destroy(this);
         }
         Player = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 }
