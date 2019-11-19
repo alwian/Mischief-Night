@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     new private Rigidbody rigidbody;
     new private Camera camera;
 
+    public void SetMaxMovementSpeed(float newMax)
+    {
+        maxMovementSpeed = Mathf.Clamp(newMax, 0f, 100f);
+    }
+
     private void Awake()
     {
         this.player = GetComponent<Player>();
