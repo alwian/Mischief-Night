@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Destroying duplicate GameManager...");
             Destroy(this);
         }
+
         Player = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
 
         Cursor.lockState = CursorLockMode.Locked;
