@@ -11,6 +11,6 @@ public class FaceCamera : MonoBehaviour
     private void Update()
     {
         this.transform.LookAt(Camera.main.transform);
-        this.transform.rotation *= Quaternion.Euler(0f, 180f, 0f);
+        this.transform.rotation *= Quaternion.Euler(0f, 360f, 0f);
     }
 }
