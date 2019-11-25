@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 346544727722348256}
   - component: {fileID: 346544727722348257}
+  - component: {fileID: 5295138951514290888}
   m_Layer: 0
   m_Name: Node
   m_TagString: Untagged
@@ -45,6 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connections: []
+--- !u!65 &5295138951514290888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346544727722348270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3262908327600078598
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,14 +70,13 @@ GameObject:
   - component: {fileID: 1407271968544404836}
   - component: {fileID: 6322641843154198719}
   - component: {fileID: 4719838020944390637}
-  - component: {fileID: 8652144226635841328}
   m_Layer: 0
   m_Name: NodeVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1407271968544404836
 Transform:
   m_ObjectHideFlags: 0
@@ -124,16 +137,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8652144226635841328
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3262908327600078598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

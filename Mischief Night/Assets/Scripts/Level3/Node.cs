@@ -1,15 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 
+/// <summary>
+/// The Node used by the pathfinding alogorithm for Level 3's maze
+/// Includes MenuItem and Gizmo code to speed up development
+/// Also has Undo support
+/// </summary>
 public class Node : MonoBehaviour
 {
     public List<Node> connections = new List<Node>();
 
     static Node activeNode;
-
     static readonly string UNDO_NAME = "Node Connections";
 
     [MenuItem("Nodes/Select #1")]
@@ -99,6 +101,7 @@ public class Node : MonoBehaviour
         }
     }
 
+    // Visualizes the connections between nodes
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
