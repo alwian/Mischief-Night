@@ -11,7 +11,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] LayerMask interactionMask;
 
     [SerializeField] ExamineGui examineGui;
-
+    [SerializeField] CrosshairManager crosshairManager;
 
     PlayerController controller;
     new Camera camera;
@@ -76,6 +76,7 @@ public class PlayerInteraction : MonoBehaviour
             interactable = null;
             examinable = null;
             physObject = null;
+            crosshairManager.SetCrosshairStyle(CrosshairStyle.Normal);
             return;
         }
 
@@ -86,12 +87,20 @@ public class PlayerInteraction : MonoBehaviour
             interactable = hit.collider.GetComponentInParent<IInteractable>();
             examinable = hit.collider.GetComponentInParent<IExaminable>();
             physObject = hit.collider.GetComponentInParent<IPhysicsObject>();
+
+            if (interactable.IsNull() == false || physObject.IsNull() == false)
+                crosshairManager.SetCrosshairStyle(CrosshairStyle.Interaction);
+            else if (examinable.IsNull() == false)
+                crosshairManager.SetCrosshairStyle(CrosshairStyle.Examine);
+            else
+                crosshairManager.SetCrosshairStyle(CrosshairStyle.Normal);
         }
         else
         {
             interactable = null;
             examinable = null;
             physObject = null;
+            crosshairManager.SetCrosshairStyle(CrosshairStyle.Normal);
         }
     }
 }
