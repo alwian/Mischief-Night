@@ -23,10 +23,12 @@ public class CullingTrigger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        EnableAll();
+        if (other.CompareTag("Player"))
+            EnableAll();
     }
     private void OnTriggerExit(Collider other)
     {
-        DisableAll();
+        if (other.CompareTag("Player"))
+            DisableAll();
     }
 }
