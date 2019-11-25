@@ -4153,13 +4153,20 @@ MonoBehaviour:
   cameraOffset: {x: 0, y: 2, z: 0.1}
   minCameraRot: -80
   maxCameraRot: 80
-  movementForce: 500
-  maxMovementSpeed: 5
+  movementForce: 550
+  maxMovementSpeed: 4
+  sprintMultiplier: 1.5
+  maxFlowMultiplier: 3
+  flowStartTime: 2.5
+  flowRate: 0.2
+  maxFlowTurnAngle: 65
+  flowThreshold: 0.95
   physicsCollider: {fileID: 8210378063695459528}
   movingMaterial: {fileID: 13400000, guid: 15c668b155bda3b498f4de7ed970c4c2, type: 2}
   stillMaterial: {fileID: 13400000, guid: a0e449fd80e903841b1aff335c97fa0a, type: 2}
   enablePlayerControl: 1
   enableCameraControl: 1
+  activeFlowMult: 1
 --- !u!114 &2580669768111047580
 MonoBehaviour:
   m_ObjectHideFlags: 0
