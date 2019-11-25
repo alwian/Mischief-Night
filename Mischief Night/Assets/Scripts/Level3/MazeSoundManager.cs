@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class MazeSoundManager : MonoBehaviour
 {
-    [SerializeField] GameObject sound;
+    [SerializeField] GameObject soundEmitter;
     [SerializeField] float speedMultiplier = 5f;
-
     [SerializeField] PathFinder pather;
 
-    [SerializeField] GameObject fakePlayer;
-    [SerializeField] Node targetNode;
+    Player player;
 
     Node activeNode;
+    Node targetNode;
     List<Node> path;
+
+    private void Start()
+    {
+        player = GameManager.Instance.Player;
+    }
+
     // Update the path
     public void UpdateNode(Node node)
     {
@@ -21,12 +26,20 @@ public class MazeSoundManager : MonoBehaviour
         path = pather.GeneratePath(activeNode, targetNode);
     }
 
+    public void SetTarget(Node node)
+    {
+        targetNode = node;
+        path = pather.GeneratePath(activeNode, targetNode);
+    }
 
     // Use the path and current position to place the sound
     private void Update()
     {
-        if (path == null)
+        if (path == null || !targetNode || !activeNode)
+        {
+            soundEmitter.SetActive(false);
             return;
+        }
 
         Vector3 targetPos;
         if (path.Count < 3)
@@ -39,7 +52,7 @@ public class MazeSoundManager : MonoBehaviour
             var pos3 = path[2].transform.position;
 
             float full = Vector3.Distance(pos1, pos2);
-            float players = Vector3.Distance(fakePlayer.transform.position, pos2);
+            float players = Vector3.Distance(player.transform.position, pos2);
 
 
 
@@ -53,7 +66,8 @@ public class MazeSoundManager : MonoBehaviour
 
 
         }
-        sound.transform.position = Vector3.Lerp(sound.transform.position, targetPos, Time.deltaTime * speedMultiplier);
+        soundEmitter.SetActive(true);
+        soundEmitter.transform.position = Vector3.Lerp(soundEmitter.transform.position, targetPos, Time.deltaTime * speedMultiplier);
     }
 
     private static int FindClosest(Vector3 toPos, Vector3[] positions)

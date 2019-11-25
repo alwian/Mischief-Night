@@ -5,7 +5,13 @@ using UnityEngine;
 public class NodeCollider : MonoBehaviour
 {
     [SerializeField] MazeSoundManager manager;
-    
+
+    private void Awake()
+    {
+        this.transform.SetParent(GameManager.Instance.Player.transform);
+        this.transform.localPosition = Vector3.zero;
+    }
+
     // Change nodes on touch 
     private void OnTriggerEnter(Collider other)
     {

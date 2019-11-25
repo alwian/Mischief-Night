@@ -8,6 +8,9 @@ public class PathFinder : MonoBehaviour
     
     public List<Node> GeneratePath(Node start, Node end)
     {
+        if (!start || !end)
+            return null;
+
         return PathFind(start, end);
     }
 
