@@ -11,9 +11,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float minCameraRot = -80f;
     [SerializeField] float maxCameraRot = 80f;
 
-    [Header("Physics Options")]
+    [Header("Movement Options")]
     [SerializeField] float movementForce = 100f;
     [SerializeField] float maxMovementSpeed = 5f;
+    [SerializeField] float sprintMultiplier = 1.5f;
+
+    [Header("Movement Flow")]
+    [SerializeField] float maxFlowMultiplier = 1.35f;
+    [SerializeField] float flowStartTime = 3.5f;
+    [SerializeField] float flowRate = 0.5f;
+    [SerializeField] float maxFlowTurnAngle = 65f;
+    [SerializeField] float flowThreshold = 0.95f;
+
+    [Header("Physics Options")]
     [SerializeField] Collider physicsCollider;
     [SerializeField] PhysicMaterial movingMaterial; 
     [SerializeField] PhysicMaterial stillMaterial;
@@ -71,6 +81,8 @@ public class PlayerController : MonoBehaviour
             Input.GetAxis("Vertical")
         );
 
+        bool isSprinting = Input.GetButton("Sprint");
+
         if (input.sqrMagnitude > 1f)
             input = input.normalized;
 
@@ -79,6 +91,9 @@ public class PlayerController : MonoBehaviour
         else
             physicsCollider.material = movingMaterial;
 
+        if (isSprinting)
+            input *= sprintMultiplier;
+
         rigidbody.AddRelativeForce(input * movementForce * Time.fixedDeltaTime, ForceMode.Impulse);
 
         // Get the velocity and take out the gravity
@@ -86,10 +101,49 @@ public class PlayerController : MonoBehaviour
         var grav = vel.y;
         vel.y = 0;
 
+        // Adjust max speed
+        var activeMaxSpeed = maxMovementSpeed * activeFlowMult;
+        if (isSprinting)
+            activeMaxSpeed *= sprintMultiplier;
+
         // Clamp the gravity-less velocity and reapply gravity
-        vel = Vector3.ClampMagnitude(vel, maxMovementSpeed);
+        vel = Vector3.ClampMagnitude(vel, activeMaxSpeed);
+
+        // Adjust flow (movement speed bonus)
+        //
+        var worldSpaceInput = this.transform.rotation * input;
+        // Going fast enough and not turning to sharply
+        if (vel.magnitude / (maxMovementSpeed*sprintMultiplier) > flowThreshold && Vector3.Angle(vel, worldSpaceInput) < maxFlowTurnAngle)
+            IncreaseFlow();
+        else
+            ResetFlow();
+
+
         vel.y = grav;
 
         rigidbody.velocity = vel;
+    }
+
+    bool active;
+    public float activeFlowMult = 1f;
+    float flowTimer = 0f;
+    private void IncreaseFlow()
+    {
+        // Set the timer when first enabling
+        if (!active)
+            flowTimer = Time.time + flowStartTime;
+
+        // Increase flow once the timer is over
+        if (Time.time > flowTimer)
+            activeFlowMult = Mathf.Clamp(activeFlowMult + (flowRate * Time.fixedDeltaTime), 1f, maxFlowMultiplier);
+
+        active = true;
+    }
+
+    // Reset flow
+    private void ResetFlow()
+    {
+        active = false;
+        activeFlowMult = 1f;
     }
 }

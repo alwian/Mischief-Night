@@ -2640,6 +2640,78 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &1111043384136938177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843561573484954671}
+  - component: {fileID: 5422479233843537457}
+  - component: {fileID: 1964498191632973577}
+  m_Layer: 0
+  m_Name: RightWing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &843561573484954671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111043384136938177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 848, y: 2649, z: 164}
+  m_LocalScale: {x: 2041.011, y: 1316.8265, z: 483.39392}
+  m_Children: []
+  m_Father: {fileID: 2833828983523657010}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5422479233843537457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111043384136938177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a50c2de89b68e0419bb8cf31599fe76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cullObjects:
+  - {fileID: 4026804133877584736}
+  - {fileID: 8923826682980398167}
+  - {fileID: 7122502408594318924}
+  - {fileID: 1250475666353578714}
+  - {fileID: 8945862000006554950}
+  - {fileID: 8408588960078376629}
+  - {fileID: 3955194827860952610}
+  - {fileID: 233839486973048458}
+  - {fileID: 2944046082841158241}
+  - {fileID: 3383012381460740468}
+  - {fileID: 66417098292746751}
+  - {fileID: 6553103676877823083}
+  - {fileID: 7538085590325061381}
+  - {fileID: 2845878514067845392}
+--- !u!65 &1964498191632973577
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111043384136938177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1189426537064301706
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,6 +7259,78 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &3113238062234319968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2733391952788946061}
+  - component: {fileID: 3200364779281157466}
+  - component: {fileID: 3170000971229740681}
+  m_Layer: 0
+  m_Name: LeftWing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2733391952788946061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113238062234319968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 848, y: 278, z: 164}
+  m_LocalScale: {x: 2041.011, y: 1316.8265, z: 483.39392}
+  m_Children: []
+  m_Father: {fileID: 2833828983523657010}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3200364779281157466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113238062234319968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a50c2de89b68e0419bb8cf31599fe76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cullObjects:
+  - {fileID: 3489558516215515964}
+  - {fileID: 2277640035871140730}
+  - {fileID: 7646290165397649448}
+  - {fileID: 6152685811025534198}
+  - {fileID: 3379481591955215280}
+  - {fileID: 6546258809510774300}
+  - {fileID: 4483455545166580901}
+  - {fileID: 5461037547673818502}
+  - {fileID: 215033705456293735}
+  - {fileID: 3034703081787894368}
+  - {fileID: 2411765768014781090}
+  - {fileID: 1292414390614471650}
+  - {fileID: 4012198904427724883}
+  - {fileID: 1750991396548501008}
+--- !u!65 &3170000971229740681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113238062234319968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3118478954401195165
 GameObject:
   m_ObjectHideFlags: 0
@@ -9938,7 +10082,7 @@ Transform:
   - {fileID: 819528122416688373}
   - {fileID: 3974532105872507110}
   m_Father: {fileID: 922155868454196508}
-  m_RootOrder: 305
+  m_RootOrder: 304
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4146619131464464777
 GameObject:
@@ -10075,7 +10219,7 @@ Transform:
   m_GameObject: {fileID: 4221981956970637071}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 3957845719289178798}
   - {fileID: 8574718120779596545}
@@ -10381,8 +10525,8 @@ Transform:
   - {fileID: 3779720298531945546}
   - {fileID: 4960975707494170363}
   - {fileID: 9061073174502488888}
-  - {fileID: 7287519438460260598}
   - {fileID: 292503870171442846}
+  - {fileID: 2833828983523657010}
   - {fileID: 170654731450111868}
   - {fileID: 1093181599961364847}
   m_Father: {fileID: 0}
@@ -10536,7 +10680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4228236646448508561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 693, y: 1530, z: -0}
+  m_LocalPosition: {x: 693, y: 1530, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6448359142095626740}
@@ -18281,80 +18425,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &6628971153459361144
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7287519438460260598}
-  - component: {fileID: 1066553204593309710}
-  m_Layer: 0
-  m_Name: skp_camera_Last_Saved_SketchUp_View
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7287519438460260598
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6628971153459361144}
-  m_LocalRotation: {x: 0.46987855, y: 0.6135057, z: 0.5038787, w: 0.38591614}
-  m_LocalPosition: {x: -3004.305, y: 504.9624, z: 872.5927}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
-  m_Children: []
-  m_Father: {fileID: 922155868454196508}
-  m_RootOrder: 304
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &1066553204593309710
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6628971153459361144}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 0
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 0.00254, y: 15.5448}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 0
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 1
-  far clip plane: 1000
-  field of view: 35
-  orthographic: 0
-  orthographic size: 999.21686
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &6668812631572641561
 GameObject:
   m_ObjectHideFlags: 0
@@ -19609,6 +19679,79 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &7072112514065636065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876494504637725661}
+  - component: {fileID: 7488110970765749839}
+  - component: {fileID: 5809865643864497759}
+  m_Layer: 0
+  m_Name: Front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &876494504637725661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072112514065636065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 247, y: 1514, z: 164}
+  m_LocalScale: {x: 796.55566, y: 2270.604, z: 483.39392}
+  m_Children: []
+  m_Father: {fileID: 2833828983523657010}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7488110970765749839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072112514065636065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a50c2de89b68e0419bb8cf31599fe76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cullObjects:
+  - {fileID: 8513461823064584915}
+  - {fileID: 3567059379979032555}
+  - {fileID: 4436834424315785455}
+  - {fileID: 8781487362321466718}
+  - {fileID: 8009218323811554279}
+  - {fileID: 4725775041218564244}
+  - {fileID: 4511800517269393103}
+  - {fileID: 6688324101014257982}
+  - {fileID: 2393123726265693426}
+  - {fileID: 6391938027865166737}
+  - {fileID: 6124665852687166506}
+  - {fileID: 2832299533502284501}
+  - {fileID: 4062363354057555963}
+  - {fileID: 2092610981909474581}
+  - {fileID: 3730248595246984211}
+--- !u!65 &5809865643864497759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072112514065636065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7077779484946000732
 GameObject:
   m_ObjectHideFlags: 0
@@ -22270,6 +22413,39 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &8031112519347222613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2833828983523657010}
+  m_Layer: 0
+  m_Name: CullingTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2833828983523657010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8031112519347222613}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2733391952788946061}
+  - {fileID: 843561573484954671}
+  - {fileID: 876494504637725661}
+  m_Father: {fileID: 922155868454196508}
+  m_RootOrder: 305
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8056098236453710663
 GameObject:
   m_ObjectHideFlags: 0
@@ -25440,11 +25616,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25515,11 +25686,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (15)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &7107936937858883129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 353964758840449120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6124665852687166506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 353964758840449120}
   m_PrefabAsset: {fileID: 0}
@@ -25607,6 +25789,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &8781487362321466718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 438098642299930470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5730062938423048013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -25620,11 +25808,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25695,11 +25878,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (14)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &7993854282365411714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 622094828106541019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6391938027865166737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 622094828106541019}
   m_PrefabAsset: {fileID: 0}
@@ -25787,6 +25981,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &8513461823064584915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 715940630957895915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4647360442309263552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -25800,11 +26000,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25875,8 +26070,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &6546258809510774300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 778662599053701718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7819271966195430415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -25890,11 +26096,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25965,11 +26166,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (12)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &7677206408402924333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 920728165434832244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6688324101014257982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 920728165434832244}
   m_PrefabAsset: {fileID: 0}
@@ -25980,11 +26192,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26055,8 +26262,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &4725775041218564244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1262122158774969566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8632849099708408455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -26147,6 +26365,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &7646290165397649448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 1573858788883593744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6649087370404563515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -26237,6 +26461,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &7538085590325061381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681747813908505917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6829692612921136406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -26250,11 +26480,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26325,8 +26550,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (7)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &5461037547673818502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 2008366295312507340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9048533675624228757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -26340,11 +26576,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26415,8 +26646,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (28)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &8408588960078376629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 2641336089438919423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4821691378434628774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -26513,6 +26755,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2682774617969745491}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6553103676877823083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 2682774617969745491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3073943671190445774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26597,6 +26845,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &6152685811025534198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 3073943671190445774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7149995461751189221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -26610,11 +26864,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (24)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26685,11 +26934,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (24)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &5588004852755334724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 3152919001213026333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8923826682980398167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 3152919001213026333}
   m_PrefabAsset: {fileID: 0}
@@ -26700,11 +26960,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (27)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26775,8 +27030,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (27)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &8945862000006554950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 3184238594560446732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5367534083244595029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -26790,11 +27056,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26865,8 +27126,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (25)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &7122502408594318924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 3661021886385738246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6089834184157041759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -26880,11 +27152,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26955,11 +27222,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &6448359142095626740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 4553371870837434285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8009218323811554279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 4553371870837434285}
   m_PrefabAsset: {fileID: 0}
@@ -26970,11 +27248,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (26)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27045,8 +27318,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (26)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &1250475666353578714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 4705191546370479760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2810753208414146761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -27060,11 +27344,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27135,11 +27414,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (20)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &2861137967273689585 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 4753886116757538728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1292414390614471650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 4753886116757538728}
   m_PrefabAsset: {fileID: 0}
@@ -27227,6 +27517,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &4436834424315785455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 4780748270044426967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &849373549088457468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -27240,11 +27536,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (22)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27315,8 +27606,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (22)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &1750991396548501008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 5213588730540649050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3321295585966763011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -27330,11 +27632,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27405,11 +27702,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (18)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &3121323575896530694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 5556549891860765023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2092610981909474581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 5556549891860765023}
   m_PrefabAsset: {fileID: 0}
@@ -27497,6 +27805,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &3567059379979032555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 5641552129228182995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &566297156927284728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -27587,6 +27901,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &3489558516215515964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 5739567955871107332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &447614634848024879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -27600,11 +27920,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27675,8 +27990,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (8)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &215033705456293735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 5975522655437480749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3792222050473715060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -27690,11 +28016,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27765,11 +28086,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (30)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &3847650913198671001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 5992151386885702336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &233839486973048458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 5992151386885702336}
   m_PrefabAsset: {fileID: 0}
@@ -27857,6 +28189,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &2845878514067845392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 6392009955275223848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1235620957611672323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -27947,6 +28285,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d7a36df6dca5643b4dedec89d28375, type: 3}
+--- !u!1 &2277640035871140730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 6940506439107488066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3008567637431572841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
@@ -27960,11 +28304,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28035,11 +28374,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (19)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &405280593804156416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 7192854862886574169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3730248595246984211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 7192854862886574169}
   m_PrefabAsset: {fileID: 0}
@@ -28050,11 +28400,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28125,11 +28470,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (29)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &52061211525362737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 7418847555574723176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3955194827860952610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 7418847555574723176}
   m_PrefabAsset: {fileID: 0}
@@ -28140,11 +28496,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28215,11 +28566,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (21)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &141133851781411392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 7473890240956167193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4012198904427724883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 7473890240956167193}
   m_PrefabAsset: {fileID: 0}
@@ -28230,11 +28592,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28305,11 +28662,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (23)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &124214984120983923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 7490809100558280490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4026804133877584736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 7490809100558280490}
   m_PrefabAsset: {fileID: 0}
@@ -28320,11 +28688,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28395,11 +28758,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (17)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &1025466299599080936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 7527432270063930289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4062363354057555963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 7527432270063930289}
   m_PrefabAsset: {fileID: 0}
@@ -28410,11 +28784,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28485,8 +28854,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &4483455545166580901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 7939504359677360367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &604387010580201142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -28500,11 +28880,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28575,8 +28950,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &4511800517269393103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 7965606173591681669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &632328529779031260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -28590,11 +28976,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28665,8 +29046,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &2393123726265693426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 8151712617068691640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1688089554016716513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -28680,11 +29072,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28755,8 +29142,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (10)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &2411765768014781090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 8173740879876779752}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1667187183194286257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -28770,11 +29168,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28845,8 +29238,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (16)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &2832299533502284501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 8599904265025861279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1230890844244832454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -28860,11 +29264,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (31)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28935,8 +29334,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (31)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &2944046082841158241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 8704891171655357995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2197760503050555506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -28950,11 +29360,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29025,11 +29430,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &2037376935387388019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 8794343054159060522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3034703081787894368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 8794343054159060522}
   m_PrefabAsset: {fileID: 0}
@@ -29040,11 +29456,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (32)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29115,8 +29526,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (32)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
+--- !u!1 &3383012381460740468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 9143567147646324030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1777098925549931367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
@@ -29130,11 +29552,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29205,11 +29622,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &1782595607494435235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
+    type: 3}
+  m_PrefabInstance: {fileID: 9147077664839133178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3379481591955215280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
     type: 3}
   m_PrefabInstance: {fileID: 9147077664839133178}
   m_PrefabAsset: {fileID: 0}
@@ -29300,6 +29728,12 @@ PrefabInstance:
 --- !u!4 &3940838958817520620 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301077090320805931, guid: 22d7a36df6dca5643b4dedec89d28375,
+    type: 3}
+  m_PrefabInstance: {fileID: 9160772036750924743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &66417098292746751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9208291539365560888, guid: 22d7a36df6dca5643b4dedec89d28375,
     type: 3}
   m_PrefabInstance: {fileID: 9160772036750924743}
   m_PrefabAsset: {fileID: 0}
