@@ -14,7 +14,11 @@ public enum Dimension
 public class DimensionManager : MonoBehaviour
 {
     public static DimensionManager Instance;
-    
+
+    [Header("Required References")]
+    [SerializeField] Material overworldSky;
+    [SerializeField] Material netherSky;
+    [Space]
     [SerializeField] Color overworldAmbient;
     [SerializeField] Color netherAmbient;
 
@@ -73,9 +77,15 @@ public class DimensionManager : MonoBehaviour
     private void UpdateSky()
     {
         if (currentDimension == Dimension.OVERWORLD)
+        {
+            RenderSettings.skybox = overworldSky;
             RenderSettings.ambientLight = overworldAmbient;
+        }
         else
+        {
+            RenderSettings.skybox = netherSky;
             RenderSettings.ambientLight = netherAmbient;
+        }
     }
 
 }
