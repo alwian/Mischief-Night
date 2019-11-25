@@ -6,7 +6,7 @@ public abstract class DimensionedObject : MonoBehaviour
 {
     protected Dimension currentDimension;
 
-    protected void Start()
+    protected virtual void Start()
     {
         DimensionManager.Instance.RegisterObject(this);
     }

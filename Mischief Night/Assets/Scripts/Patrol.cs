@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class Patrol : MonoBehaviour
+public class Patrol : DimensionedObject
 {
 
     public Transform[] points;
@@ -22,8 +22,9 @@ public class Patrol : MonoBehaviour
         Color.magenta
     };
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = true;
     }
@@ -51,6 +52,7 @@ public class Patrol : MonoBehaviour
         {
             GoToNextPoint();
             patrolling = true;
+
 
         }
 
@@ -86,6 +88,23 @@ public class Patrol : MonoBehaviour
             }
         }
     }
-        
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            DimensionManager.Instance.SetDimension(Dimension.UPSIDE_DOWN);
+        }
+    }
+
+    protected override void SetOverworld()
+    {
+        gameObject.SetActive(true);
+    }
+
+    protected override void SetUpsideDown()
+    {
+        print("SWITCHED");
+        gameObject.SetActive(false);
+    }
 }
