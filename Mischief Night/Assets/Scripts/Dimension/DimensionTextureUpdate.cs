@@ -7,9 +7,8 @@ public class DimensionTextureUpdate : DimensionedObject
     public Material norm;
     public Material dim;
 
-    protected override void Start()
+    protected void Start()
     {
-        base.Start();
         norm = gameObject.GetComponent<Renderer>().material;
     }
     protected override void SetOverworld()

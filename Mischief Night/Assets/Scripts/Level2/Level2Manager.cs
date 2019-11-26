@@ -9,7 +9,7 @@ public class Level2Manager : MonoBehaviour
     [SerializeField] GameObject collectableActivationEffect;
     [SerializeField] GameObject mineEntraceBlocker;
 
-    private void Awake()
+    private void Start()
     {
         foreach (var c in collectables)
         {

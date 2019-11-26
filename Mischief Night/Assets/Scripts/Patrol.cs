@@ -22,9 +22,8 @@ public class Patrol : DimensionedObject
         Color.magenta
     };
 
-    protected override void Start()
+    protected void Start()
     {
-        base.Start();
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = true;
     }
