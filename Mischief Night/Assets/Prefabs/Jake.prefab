@@ -627,6 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07bfa49454bdd3e4eb0fb3c30e0573d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensitivity: 7.5
   cameraOffset: {x: 0, y: 2, z: 0.1}
   minCameraRot: -80
   maxCameraRot: 80

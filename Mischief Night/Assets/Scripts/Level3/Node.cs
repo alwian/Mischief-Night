@@ -14,6 +14,7 @@ public class Node : MonoBehaviour
     static Node activeNode;
     static readonly string UNDO_NAME = "Node Connections";
 
+#if UNITY_EDITOR
     [MenuItem("Nodes/Select #1")]
     static void SelectNode()
     {
@@ -115,4 +116,5 @@ public class Node : MonoBehaviour
             Gizmos.DrawLine(this.transform.position + right, connection.transform.position + right);
         }
     }
+# endif
 }
