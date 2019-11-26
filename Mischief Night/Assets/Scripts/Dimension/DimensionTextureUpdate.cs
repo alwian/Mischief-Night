@@ -9,6 +9,7 @@ public class DimensionTextureUpdate : DimensionedObject
 
     protected override void Start()
     {
+        base.Start();
         norm = gameObject.GetComponent<Renderer>().material;
     }
     protected override void SetOverworld()
@@ -18,7 +19,7 @@ public class DimensionTextureUpdate : DimensionedObject
         Light[] childLights = lights.GetComponentsInChildren<Light>();
         foreach (Light l in childLights)
         {
-            l.color = Color.yellow;
+            l.color = Color.white;
         }
     }
 
@@ -40,12 +41,10 @@ public class DimensionTextureUpdate : DimensionedObject
         if (Input.GetKey(KeyCode.Comma))
         {
             DimensionManager.Instance.SetDimension(Dimension.UPSIDE_DOWN);
-            SetUpsideDown();
         }
         if (Input.GetKey(KeyCode.Period))
         {
             DimensionManager.Instance.SetDimension(Dimension.OVERWORLD);
-            SetOverworld();
         }
     }
 }
