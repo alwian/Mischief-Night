@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float flowRate = 0.5f;
     [SerializeField] float maxFlowTurnAngle = 65f;
     [SerializeField] float flowThreshold = 0.95f;
+    [SerializeField] float cameraShakeSpeed = 5f;
+    [SerializeField] float cameraShakeStrength = 0.1f;
 
     [Header("Physics Options")]
     [SerializeField] Collider physicsCollider;
@@ -57,6 +59,7 @@ public class PlayerController : MonoBehaviour
     }
 
     float cameraRotation = 0f;
+    float cameraShakeTimer = 0f;
     private void Update()
     {
         if (!enableCameraControl)
@@ -73,8 +76,16 @@ public class PlayerController : MonoBehaviour
         camera.transform.rotation = this.transform.rotation * Quaternion.Euler(cameraRotation, 0f, 0f);
 
         if (!cameraDropped)
+        {
             camera.transform.position = this.transform.position + (this.transform.rotation * cameraOffset);
-
+            if (flowActive)
+            {
+                cameraShakeTimer += Time.deltaTime * cameraShakeSpeed * activeFlowMult * Random.Range(0.8f, 1.2f);
+                camera.transform.position += (Vector3.up * cameraShakeStrength) * Mathf.Sin(cameraShakeTimer);
+            }
+            else
+                cameraShakeTimer = 0f;
+        }
     }
 
     private void FixedUpdate()
@@ -132,26 +143,26 @@ public class PlayerController : MonoBehaviour
         rigidbody.velocity = vel;
     }
 
-    bool active;
+    bool flowActive;
     public float activeFlowMult = 1f;
     float flowTimer = 0f;
     private void IncreaseFlow()
     {
         // Set the timer when first enabling
-        if (!active)
+        if (!flowActive)
             flowTimer = Time.time + flowStartTime;
 
         // Increase flow once the timer is over
         if (Time.time > flowTimer)
             activeFlowMult = Mathf.Clamp(activeFlowMult + (flowRate * Time.fixedDeltaTime), 1f, maxFlowMultiplier);
 
-        active = true;
+        flowActive = true;
     }
 
     // Reset flow
     private void ResetFlow()
     {
-        active = false;
+        flowActive = false;
         activeFlowMult = 1f;
     }
 }
