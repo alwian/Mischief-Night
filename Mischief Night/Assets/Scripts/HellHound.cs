@@ -19,4 +19,11 @@ public class HellHound : MonoBehaviour
     {
         agent.SetDestination(target.transform.position);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        var player = collision.collider.GetComponentInParent<Player>();
+        if (player)
+            player.Kill();
+    }
 }

@@ -37,9 +37,16 @@ public class PlayerController : MonoBehaviour
     new private Rigidbody rigidbody;
     new private Camera camera;
 
-    public void SetMaxMovementSpeed(float newMax)
+    // Enables physics on the camera, making it fall to the floor
+    bool cameraDropped = false;
+    public void DropCamera()
     {
-        maxMovementSpeed = Mathf.Clamp(newMax, 0f, 100f);
+        cameraDropped = true;
+
+        camera.gameObject.AddComponent<SphereCollider>();
+
+        var R = camera.gameObject.AddComponent<Rigidbody>();
+        R.constraints = RigidbodyConstraints.FreezeRotation;
     }
 
     private void Awake()
@@ -65,7 +72,8 @@ public class PlayerController : MonoBehaviour
         cameraRotation = Mathf.Clamp(cameraRotation - yInput, minCameraRot, maxCameraRot);
         camera.transform.rotation = this.transform.rotation * Quaternion.Euler(cameraRotation, 0f, 0f);
 
-        camera.transform.position = this.transform.position + (this.transform.rotation * cameraOffset);
+        if (!cameraDropped)
+            camera.transform.position = this.transform.position + (this.transform.rotation * cameraOffset);
 
     }
 
