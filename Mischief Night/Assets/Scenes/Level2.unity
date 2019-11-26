@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
+  m_AmbientSkyColor: {r: 0.039215688, g: 0.101960786, b: 0.14901961, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -609,6 +609,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333758237184277253, guid: 7829b70efcd124b43a04d11580c6ceec,
+        type: 3}
+      propertyPath: overworldAmbient.r
+      value: 0.039215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333758237184277253, guid: 7829b70efcd124b43a04d11580c6ceec,
+        type: 3}
+      propertyPath: overworldAmbient.g
+      value: 0.101960786
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333758237184277253, guid: 7829b70efcd124b43a04d11580c6ceec,
+        type: 3}
+      propertyPath: overworldAmbient.b
+      value: 0.14901961
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7829b70efcd124b43a04d11580c6ceec, type: 3}
