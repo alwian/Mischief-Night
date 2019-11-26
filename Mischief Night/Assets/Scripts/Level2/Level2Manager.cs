@@ -21,7 +21,8 @@ public class Level2Manager : MonoBehaviour
     public void ActivateCollectables()
     {
         foreach (var c in collectables)
-            c.gameObject.SetActive(true);
+            if (c.Dimension == DimensionManager.Instance.CurrentDimension)
+                c.gameObject.SetActive(true);
         collectableActivationEffect.SetActive(true);
     }
 

@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Camera Options")]
+    [SerializeField] float sensitivity = 1f;
     [SerializeField] Vector3 cameraOffset;
     [SerializeField] float minCameraRot = -80f;
     [SerializeField] float maxCameraRot = 80f;
@@ -67,8 +68,8 @@ public class PlayerController : MonoBehaviour
 
         // Input
         float xInput, yInput;
-        xInput = Input.GetAxis("Mouse X");
-        yInput = Input.GetAxis("Mouse Y");
+        xInput = Input.GetAxis("Mouse X") * sensitivity;
+        yInput = Input.GetAxis("Mouse Y") * sensitivity;
 
         this.transform.rotation *= Quaternion.Euler(0f, xInput, 0f);
 
