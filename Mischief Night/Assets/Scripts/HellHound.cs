@@ -13,10 +13,19 @@ public class HellHound : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         target = GameManager.Instance.Player;
+
+        agent.speed *= Random.Range(1f, 1.25f);
     }
 
     private void Update()
     {
         agent.SetDestination(target.transform.position);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        var player = collision.collider.GetComponentInParent<Player>();
+        if (player)
+            player.Kill();
     }
 }
