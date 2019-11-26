@@ -65,10 +65,10 @@ MonoBehaviour:
     value: 1
   mode:
     overrideState: 1
-    value: 1
+    value: 0
   intensity:
     overrideState: 1
-    value: 1
+    value: 3
   color:
     overrideState: 0
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -91,8 +91,8 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   radius:
-    overrideState: 0
-    value: 0.25
+    overrideState: 1
+    value: 0.5
   quality:
     overrideState: 0
     value: 2
