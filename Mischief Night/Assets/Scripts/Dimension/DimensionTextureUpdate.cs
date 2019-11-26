@@ -4,23 +4,34 @@ using UnityEngine;
 
 public class DimensionTextureUpdate : DimensionedObject
 {
-    private GameObject obj;
     public Material norm;
     public Material dim;
+
+    protected override void Start()
+    {
+        norm = gameObject.GetComponent<Renderer>().material;
+    }
     protected override void SetOverworld()
     {
-        obj.GetComponent<MeshRenderer>().material = norm;
+        gameObject.GetComponent<Renderer>().material = norm;
+        GameObject lights = GameObject.Find("HighSchool Lights");
+        Light[] childLights = lights.GetComponentsInChildren<Light>();
+        foreach (Light l in childLights)
+        {
+            l.color = Color.yellow;
+        }
     }
 
     protected override void SetUpsideDown()
     {
-        obj.GetComponent<MeshRenderer>().material = dim;
-    }
+        gameObject.GetComponent<Renderer>().material = dim;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        GameObject lights = GameObject.Find("HighSchool Lights");
+        Light[] childLights = lights.GetComponentsInChildren<Light>();
+        foreach(Light l in childLights)
+        {
+            l.color = Color.red;
+        }
     }
 
     // Update is called once per frame
@@ -29,10 +40,12 @@ public class DimensionTextureUpdate : DimensionedObject
         if (Input.GetKey(KeyCode.Comma))
         {
             DimensionManager.Instance.SetDimension(Dimension.UPSIDE_DOWN);
+            SetUpsideDown();
         }
         if (Input.GetKey(KeyCode.Period))
         {
             DimensionManager.Instance.SetDimension(Dimension.OVERWORLD);
+            SetOverworld();
         }
     }
 }

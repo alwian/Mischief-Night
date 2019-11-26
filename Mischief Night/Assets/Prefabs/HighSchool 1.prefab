@@ -25616,6 +25616,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25685,11 +25690,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
@@ -25808,6 +25808,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25877,11 +25882,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
@@ -26000,6 +26000,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26070,11 +26075,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &6546258809510774300 stripped
@@ -26096,6 +26096,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26166,11 +26171,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (12)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &7677206408402924333 stripped
@@ -26192,6 +26192,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26261,11 +26266,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
@@ -26480,6 +26480,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26550,11 +26555,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &5461037547673818502 stripped
@@ -26576,6 +26576,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26645,11 +26650,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
@@ -26864,6 +26864,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26934,11 +26939,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (24)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &5588004852755334724 stripped
@@ -26960,6 +26960,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27030,11 +27035,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (27)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &8945862000006554950 stripped
@@ -27056,6 +27056,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27126,11 +27131,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (25)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &7122502408594318924 stripped
@@ -27152,6 +27152,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27222,11 +27227,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &6448359142095626740 stripped
@@ -27248,6 +27248,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27318,11 +27323,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (26)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &1250475666353578714 stripped
@@ -27344,6 +27344,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27413,11 +27418,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
@@ -27536,6 +27536,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27606,11 +27611,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (22)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &1750991396548501008 stripped
@@ -27632,6 +27632,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27701,11 +27706,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
@@ -27920,6 +27920,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27990,11 +27995,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &215033705456293735 stripped
@@ -28016,6 +28016,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28085,11 +28090,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
@@ -28304,6 +28304,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28374,11 +28379,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (19)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &405280593804156416 stripped
@@ -28400,6 +28400,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28470,11 +28475,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (29)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &52061211525362737 stripped
@@ -28496,6 +28496,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28566,11 +28571,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (21)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &141133851781411392 stripped
@@ -28592,6 +28592,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28662,11 +28667,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (23)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &124214984120983923 stripped
@@ -28688,6 +28688,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28758,11 +28763,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (17)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &1025466299599080936 stripped
@@ -28784,6 +28784,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28854,11 +28859,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &4483455545166580901 stripped
@@ -28880,6 +28880,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28950,11 +28955,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (11)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &4511800517269393103 stripped
@@ -28976,6 +28976,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29046,11 +29051,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (13)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &2393123726265693426 stripped
@@ -29072,6 +29072,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29142,11 +29147,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (10)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &2411765768014781090 stripped
@@ -29168,6 +29168,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29238,11 +29243,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (16)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &2832299533502284501 stripped
@@ -29264,6 +29264,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (31)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29334,11 +29339,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (31)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &2944046082841158241 stripped
@@ -29360,6 +29360,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29430,11 +29435,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!4 &2037376935387388019 stripped
@@ -29456,6 +29456,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (32)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29526,11 +29531,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (32)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
 --- !u!1 &3383012381460740468 stripped
@@ -29552,6 +29552,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170654731450111868}
     m_Modifications:
+    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
+        type: 3}
+      propertyPath: m_Name
+      value: School_Chair (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 7371829566689887833, guid: 4ec356a87d35b6a41809a028a3989c97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29621,11 +29626,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770982723461264458, guid: 4ec356a87d35b6a41809a028a3989c97,
-        type: 3}
-      propertyPath: m_Name
-      value: School_Chair (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec356a87d35b6a41809a028a3989c97, type: 3}
