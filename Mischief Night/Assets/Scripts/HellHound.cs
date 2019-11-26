@@ -14,7 +14,7 @@ public class HellHound : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         target = GameManager.Instance.Player;
 
-        agent.speed = Random.Range(1f, 1.25f);
+        agent.speed *= Random.Range(1f, 1.25f);
     }
 
     private void Update()
