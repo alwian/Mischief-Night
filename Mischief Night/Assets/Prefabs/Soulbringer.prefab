@@ -1550,6 +1550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kosa1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cac82932447701442a44fd865b2fe85e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cac82932447701442a44fd865b2fe85e,
         type: 3}
       propertyPath: m_LocalPosition.x
