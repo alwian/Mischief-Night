@@ -9,8 +9,19 @@ public class Level2Manager : MonoBehaviour
 {
     [Header("Required References")]
     [SerializeField] List<Collectable> collectables = new List<Collectable>();
+    [SerializeField] GameObject collectablePreEffect;
     [SerializeField] GameObject collectableActivationEffect;
+    [SerializeField] GameObject collectablesCompleteEffect;
     [SerializeField] GameObject mineEntraceBlocker;
+
+    // Ensure effects and entrace blockage are in proper states
+    private void Awake()
+    {
+        collectablePreEffect.SetActive(true);
+        collectablesCompleteEffect.SetActive(false);
+        collectableActivationEffect.SetActive(false);
+        mineEntraceBlocker.SetActive(true);
+    }
 
     private void Start()
     {
@@ -26,6 +37,8 @@ public class Level2Manager : MonoBehaviour
         foreach (var c in collectables)
             if (c.Dimension == DimensionManager.Instance.CurrentDimension)
                 c.gameObject.SetActive(true);
+
+        collectablePreEffect.SetActive(false);
         collectableActivationEffect.SetActive(true);
     }
 
@@ -33,6 +46,9 @@ public class Level2Manager : MonoBehaviour
     {
         if (collectable && collectables.Contains(collectable))
             collectables.Remove(collectable);
+
+        if (collectables.Count <= 0)
+            collectablesCompleteEffect.SetActive(true);
     }
 
     public void TryActivateAltar(Altar altar)
