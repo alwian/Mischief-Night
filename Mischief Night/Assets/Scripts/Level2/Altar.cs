@@ -29,5 +29,7 @@ public class Altar : MonoBehaviour, IInteractable
     {
         beamEffect.SetActive(true);
         audio.PlayOneShot(activationSound);
+
+
     }
 }

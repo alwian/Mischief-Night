@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level3Manager : MonoBehaviour
+public class Level3Manager : LevelManager
 {
     [Header("Required References")]
     [SerializeField] GameObject finalDoor;
