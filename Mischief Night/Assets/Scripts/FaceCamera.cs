@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,9 +11,11 @@ using UnityEngine;
 /// </summary>
 public class FaceCamera : MonoBehaviour
 {
+    [SerializeField] bool flip;
     private void Update()
     {
         this.transform.LookAt(Camera.main.transform);
-        this.transform.rotation *= Quaternion.Euler(0f, 360f, 0f);
+        if (flip)
+            this.transform.rotation *= Quaternion.Euler(0f, 180f, 0f);
     }
 }

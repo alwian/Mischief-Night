@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+ * Authors: Colton Campbell (B00693513)
+ *          Amanda... (B00...)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -34,8 +38,10 @@ public class HellHound : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         var player = collision.collider.GetComponentInParent<Player>();
-        anim.SetBool("Attack", true);
         if (player)
+        {
+            anim.SetBool("Attack", true);
             player.Kill();
+        }
     }
 }

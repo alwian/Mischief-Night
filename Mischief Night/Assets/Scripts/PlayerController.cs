@@ -1,5 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
 using UnityEngine;
 
 [RequireComponent(typeof(Player))]

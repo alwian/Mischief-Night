@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
@@ -11,6 +14,7 @@ public class Node : MonoBehaviour
 {
     public List<Node> connections = new List<Node>();
 
+#if UNITY_EDITOR
     static Node activeNode;
     static readonly string UNDO_NAME = "Node Connections";
 
@@ -115,4 +119,5 @@ public class Node : MonoBehaviour
             Gizmos.DrawLine(this.transform.position + right, connection.transform.position + right);
         }
     }
+#endif
 }
