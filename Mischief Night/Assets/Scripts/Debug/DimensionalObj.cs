@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,8 +15,9 @@ public class DimensionalObj : DimensionedObject
     [SerializeField] Color overworldColor = Color.white;
     [SerializeField] Color netherColor = Color.white;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         SetOverworld();
     }
 

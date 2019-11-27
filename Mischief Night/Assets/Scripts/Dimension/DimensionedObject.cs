@@ -1,5 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
 using UnityEngine;
 
 public abstract class DimensionedObject : MonoBehaviour
@@ -8,7 +9,10 @@ public abstract class DimensionedObject : MonoBehaviour
 
     protected virtual void Awake()
     {
-        DimensionManager.Instance.RegisterObject(this);
+        if (!DimensionManager.Instance)
+            Debug.LogErrorFormat("DimensionedObjects require an instance of the DimensionManager to be in the scene.");
+        else
+            DimensionManager.Instance.RegisterObject(this);
     }
 
     public void SetDimension(Dimension d)

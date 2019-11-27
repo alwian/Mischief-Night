@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
 public interface IExaminable : IGameObject
 {
     string GetExamine();

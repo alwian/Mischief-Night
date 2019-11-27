@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
