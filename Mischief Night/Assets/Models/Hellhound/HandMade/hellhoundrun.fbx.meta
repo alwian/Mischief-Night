@@ -1,29 +1,35 @@
 fileFormatVersion: 2
-guid: a0877a974bc70d0488d357090eac3019
+guid: 43fcedeadfdf6ca4f96327963a45b6ae
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: -1966088731957406158
-    second: AttackStance
+      74: 8961286533831662369
+    second: HellHoundArmature|EmptyAction
   - first:
-      74: 6998106240459025436
-    second: IddleBreathing
+      74: -7937125243562850679
+    second: HellHoundArmature|EmptyAction.001
   - first:
-      74: 8024878520668047933
-    second: IddleHeadShake
+      74: 4647057389811390944
+    second: HellHoundArmature|HellHoundArmature|AttackStance|AttackStance
   - first:
-      74: 1238516864836173946
-    second: IddleLook
+      74: 1701049050309111330
+    second: HellHoundArmature|HellHoundArmature|IddleBreathing|IddleBreathing
   - first:
-      74: 5874199474891123731
-    second: Roar
+      74: -4214408637711598627
+    second: HellHoundArmature|HellHoundArmature|IddleHeadShake|IddleHeadShake
   - first:
-      74: 2667949614841947897
-    second: Walk
+      74: -5724128402697721301
+    second: HellHoundArmature|HellHoundArmature|IddleLook|IddleLook
   - first:
-      74: 8149671479084113555
-    second: Walk (1)
+      74: -849811723188454888
+    second: HellHoundArmature|HellHoundArmature|Roar|Roar
+  - first:
+      74: 2124165927373458264
+    second: HellHoundArmature|HellHoundArmature|Run
+  - first:
+      74: 2074316942739075607
+    second: HellHoundArmature|HellHoundArmature|Walk|Walk
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -53,8 +59,66 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: AttackStance
-      takeName: AttackStance
+      name: HellHoundArmature|EmptyAction
+      takeName: HellHoundArmature|EmptyAction
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HellHoundArmature|EmptyAction.001
+      takeName: HellHoundArmature|EmptyAction.001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HellHoundArmature|HellHoundArmature|AttackStance|AttackStance
+      takeName: HellHoundArmature|HellHoundArmature|AttackStance|AttackStance
       internalID: 0
       firstFrame: 0
       lastFrame: 25
@@ -82,8 +146,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: IddleBreathing
-      takeName: IddleBreathing
+      name: HellHoundArmature|HellHoundArmature|IddleBreathing|IddleBreathing
+      takeName: HellHoundArmature|HellHoundArmature|IddleBreathing|IddleBreathing
       internalID: 0
       firstFrame: 0
       lastFrame: 50
@@ -111,8 +175,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: IddleHeadShake
-      takeName: IddleHeadShake
+      name: HellHoundArmature|HellHoundArmature|IddleHeadShake|IddleHeadShake
+      takeName: HellHoundArmature|HellHoundArmature|IddleHeadShake|IddleHeadShake
       internalID: 0
       firstFrame: 0
       lastFrame: 90
@@ -140,8 +204,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: IddleLook
-      takeName: IddleLook
+      name: HellHoundArmature|HellHoundArmature|IddleLook|IddleLook
+      takeName: HellHoundArmature|HellHoundArmature|IddleLook|IddleLook
       internalID: 0
       firstFrame: 0
       lastFrame: 180
@@ -169,8 +233,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Roar
-      takeName: Roar
+      name: HellHoundArmature|HellHoundArmature|Roar|Roar
+      takeName: HellHoundArmature|HellHoundArmature|Roar|Roar
       internalID: 0
       firstFrame: 0
       lastFrame: 60
@@ -198,11 +262,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Walk
-      takeName: Walk
+      name: HellHoundArmature|HellHoundArmature|Run
+      takeName: HellHoundArmature|HellHoundArmature|Run
       internalID: 0
       firstFrame: 0
-      lastFrame: 33
+      lastFrame: 130
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -227,8 +291,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Walk (1)
-      takeName: Walk
+      name: HellHoundArmature|HellHoundArmature|Walk|Walk
+      takeName: HellHoundArmature|HellHoundArmature|Walk|Walk
       internalID: 0
       firstFrame: 0
       lastFrame: 33
@@ -273,8 +337,8 @@ ModelImporter:
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 1
-    maxBonesPerVertex: 32
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
     minBoneWeight: 0.001
     meshOptimizationFlags: -1
     indexFormat: 0

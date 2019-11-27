@@ -8,6 +8,7 @@ public class HellHound : MonoBehaviour
 {
     Player target;
     NavMeshAgent agent;
+    Animator anim;
 
     private void Start()
     {
@@ -15,16 +16,25 @@ public class HellHound : MonoBehaviour
         target = GameManager.Instance.Player;
 
         agent.speed *= Random.Range(1f, 1.25f);
+
+        anim = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
     {
         agent.SetDestination(target.transform.position);
+        Animate();
+    }
+
+    private void Animate()
+    {
+        anim.SetBool("Move", true);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         var player = collision.collider.GetComponentInParent<Player>();
+        anim.SetBool("Attack", true);
         if (player)
             player.Kill();
     }
