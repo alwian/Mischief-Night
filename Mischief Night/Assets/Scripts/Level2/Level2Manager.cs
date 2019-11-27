@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level2Manager : MonoBehaviour
+public class Level2Manager : LevelManager
 {
     [Header("Required References")]
     [SerializeField] List<Collectable> collectables = new List<Collectable>();

@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Player playerPrefab;
     [SerializeField] Transform spawnPoint;
 
+    [SerializeField] float levelTitleDisplayTime = 5f;
+
     private void Awake()
     {
         if (!Instance)
@@ -28,6 +30,10 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        var lvlManager = GameObject.FindObjectOfType<LevelManager>();
+        if (lvlManager)
+            lvlManager.ShowTitle(levelTitleDisplayTime);
     }
 
     public void Reload()
