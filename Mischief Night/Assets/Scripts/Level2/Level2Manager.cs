@@ -9,6 +9,7 @@ public class Level2Manager : MonoBehaviour
 {
     [Header("Required References")]
     [SerializeField] List<Collectable> collectables = new List<Collectable>();
+    [SerializeField] List<DimensionPortal> portals = new List<DimensionPortal>();
     [SerializeField] GameObject collectablePreEffect;
     [SerializeField] GameObject collectableActivationEffect;
     [SerializeField] GameObject collectablesCompleteEffect;
@@ -30,6 +31,9 @@ public class Level2Manager : MonoBehaviour
             c.gameObject.SetActive(false);
             c.OnCollect += OnCollection;
         }
+
+        foreach (var p in portals)
+            p.gameObject.SetActive(false);
     }
 
     public void ActivateCollectables()
@@ -37,6 +41,12 @@ public class Level2Manager : MonoBehaviour
         foreach (var c in collectables)
             if (c.Dimension == DimensionManager.Instance.CurrentDimension)
                 c.gameObject.SetActive(true);
+
+        foreach (var p in portals)
+        {
+            p.gameObject.SetActive(true);
+            p.SetDimension(DimensionManager.Instance.CurrentDimension);
+        }   
 
         collectablePreEffect.SetActive(false);
         collectableActivationEffect.SetActive(true);
