@@ -10,6 +10,7 @@ public class Player : DimensionedObject, IDamagable
 {
     [Header("Required References")]
     [SerializeField] HealthBar healthGui;
+    [SerializeField] ObjectiveGui objectiveGui;
 
     [Header("Options")]
     [SerializeField] float maxHealth = 100f;
@@ -49,6 +50,13 @@ public class Player : DimensionedObject, IDamagable
         health = maxHealth;
         SetOverworld();
     }
+
+
+    public void SetObjective(string objective)
+    {
+        objectiveGui.SetObjective(objective);
+    }
+
 
     bool isDead = false;
     public void Kill()

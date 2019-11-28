@@ -1518,6 +1518,10 @@ MonoBehaviour:
   collectableActivationEffect: {fileID: 1160731611}
   collectablesCompleteEffect: {fileID: 1022287829}
   mineEntraceBlocker: {fileID: 1681993948}
+  startObjective: Find the altar
+  collectObjective: Collect the ritual stones
+  returnObjective: Return to the stones to the altar
+  nextLevelObjective: Follow the beam
 --- !u!1 &696602707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,7 +6696,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb2d80738fa99b845bad04263f2bc65e, type: 2}
+  - {fileID: 2100000, guid: 077930c01421b6e4bbbe5726b126b3c0, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

@@ -41,13 +41,13 @@ public class CameraManager : MonoBehaviour
     public void FadeOut(float time)
     {
         StopAllCoroutines();
-        StartCoroutine(Fade(time, deathFader, 1f));
+        StartCoroutine(Fade(time, blackFader, 1f));
     }
 
     public void FadeIn(float time)
     {
         StopAllCoroutines();
-        StartCoroutine(Fade(time, deathFader, 0f));
+        StartCoroutine(Fade(time, blackFader, 0f));
     }
 
     private IEnumerator Fade(float time, Image fader, float targetOpacity)
