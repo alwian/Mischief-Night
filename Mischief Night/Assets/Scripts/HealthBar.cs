@@ -23,7 +23,8 @@ public class HealthBar : MonoBehaviour
 
         valueBar.sizeDelta = size;
 
-        StartCoroutine(DelayedHide());
+        if (value >= 1f)
+            StartCoroutine(DelayedHide());
     }
 
     private void Show()

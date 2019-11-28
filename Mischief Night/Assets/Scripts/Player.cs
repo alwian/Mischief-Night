@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerController))]
-public class Player : DimensionedObject
+public class Player : DimensionedObject, IDamagable
 {
     [Header("Required References")]
     [SerializeField] HealthBar healthGui;
@@ -47,6 +47,7 @@ public class Player : DimensionedObject
         base.Awake();
         controller = GetComponent<PlayerController>();
         health = maxHealth;
+        SetOverworld();
     }
 
     bool isDead = false;
@@ -74,7 +75,7 @@ public class Player : DimensionedObject
         if (dimensionRoutine != null)
             StopCoroutine(dimensionRoutine);
 
-        dimensionRoutine = GainHealth();
+        dimensionRoutine = RegenHealth();
         StartCoroutine(dimensionRoutine);
     }
 
@@ -87,13 +88,23 @@ public class Player : DimensionedObject
         StartCoroutine(dimensionRoutine);
     }
 
-    IEnumerator GainHealth()
+    IEnumerator RegenHealth()
     {
+        float prevHealth = health;
         yield return new WaitForSeconds(healthRecoveryDelay);
 
         while (true)
         {
-            health = Mathf.Clamp(health + (healthRecoveryRate * Time.deltaTime), 0f, maxHealth);
+            if (prevHealth > health)
+            {
+                prevHealth = health;
+                yield return new WaitForSeconds(healthRecoveryDelay);
+            }
+            else
+            {
+                health = Mathf.Clamp(health + (healthRecoveryRate * Time.deltaTime), 0f, maxHealth);
+                prevHealth = health;
+            }
             yield return null;
         }
     }
@@ -106,5 +117,10 @@ public class Player : DimensionedObject
             health = Mathf.Clamp(health - (healthLossRate * Time.deltaTime), 0f, maxHealth);
             yield return null;
         }
+    }
+
+    public void Damage(float amount)
+    {
+        health -= amount;
     }
 }
