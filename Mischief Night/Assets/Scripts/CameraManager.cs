@@ -9,9 +9,15 @@ using UnityEngine.UI;
 public class CameraManager : MonoBehaviour
 {
     public static CameraManager Instance;
-
-    [SerializeField] Image fader;
     new Camera camera;
+
+    [Header("Required References")]
+    [SerializeField] Image blackFader;
+    [SerializeField] Image deathFader;
+
+    [Header("Options")]
+    [SerializeField] [Range(0f, 1f)] float deathFaderOpacity = 0.95f;
+
 
     private void Awake()
     {
@@ -26,19 +32,25 @@ public class CameraManager : MonoBehaviour
         camera = Camera.main;
     }
 
+    public void DeathFadeOut(float time)
+    {
+        StopAllCoroutines();
+        StartCoroutine(Fade(time, deathFader, deathFaderOpacity));
+    }
+
     public void FadeOut(float time)
     {
         StopAllCoroutines();
-        StartCoroutine(Fade(time, 1f));
+        StartCoroutine(Fade(time, deathFader, 1f));
     }
 
     public void FadeIn(float time)
     {
         StopAllCoroutines();
-        StartCoroutine(Fade(time, 0f));
+        StartCoroutine(Fade(time, deathFader, 0f));
     }
 
-    private IEnumerator Fade(float time, float targetOpacity)
+    private IEnumerator Fade(float time, Image fader, float targetOpacity)
     {
         Color col;
 
