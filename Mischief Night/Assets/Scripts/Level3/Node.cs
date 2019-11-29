@@ -3,6 +3,7 @@
  */
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEditor;
 
 /// <summary>
@@ -10,9 +11,17 @@ using UnityEditor;
 /// Includes MenuItem and Gizmo code to speed up development
 /// Also has Undo support
 /// </summary>
+[RequireComponent(typeof(Rigidbody))]
 public class Node : MonoBehaviour
 {
     public List<Node> connections = new List<Node>();
+    public UnityAction<Node> OnTrigger;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            OnTrigger?.Invoke(this);
+    }
 
 #if UNITY_EDITOR
     static Node activeNode;
