@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        StartLevel();
     }
 
     public void StartLevel(AsyncOperation op)

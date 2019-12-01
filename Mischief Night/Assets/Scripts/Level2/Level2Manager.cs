@@ -14,6 +14,7 @@ public class Level2Manager : LevelManager
     [SerializeField] GameObject collectableActivationEffect;
     [SerializeField] GameObject collectablesCompleteEffect;
     [SerializeField] GameObject mineEntraceBlocker;
+    [SerializeField] GameObject lowfiLevel1;
 
     [Header("Objectives")]
     [SerializeField] string startObjective;
@@ -40,11 +41,8 @@ public class Level2Manager : LevelManager
 
     public override void StartLevel()
     {
-        var player = GameManager.Instance.Player;
-        player.transform.position = spawnPoint.position;
-        player.transform.rotation = spawnPoint.rotation;
-
-        ShowTitle();
+        base.StartLevel();
+        lowfiLevel1.SetActive(true);
         GameManager.Instance.Player.SetObjective(startObjective);
     }
 

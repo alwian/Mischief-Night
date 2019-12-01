@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CameraAnimator))]
+[RequireComponent(typeof(Rigidbody))]
 public class LevelTransition : MonoBehaviour
 {
     [SerializeField] string nextLevel;
@@ -14,11 +15,13 @@ public class LevelTransition : MonoBehaviour
     {
         cameraAnim = GetComponent<CameraAnimator>();
     }
+
     string currentLevel;
     bool started = false;
-    private void Update()
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (!started && Input.GetKeyDown(KeyCode.Y))
+        if (!started && other.CompareTag("Player"))
         {
             started = true;
 

@@ -144,8 +144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903ea581d40b7644d83ff86c86d7fef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPrefab: {fileID: 3811948859282945817, guid: b5304505cb445f245be3cf78146e5be8,
+    type: 3}
   blackFader: {fileID: 710522879319123199}
   deathFader: {fileID: 2914671507936275375}
+  deathFaderOpacity: 0.95
 --- !u!1 &710522879319123185
 GameObject:
   m_ObjectHideFlags: 0

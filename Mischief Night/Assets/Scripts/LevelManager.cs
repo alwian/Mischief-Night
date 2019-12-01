@@ -11,7 +11,14 @@ public abstract class LevelManager : MonoBehaviour
     [SerializeField] Canvas levelTitle;
     [SerializeField] float titleDisplayTime = 5f;
 
-    public abstract void StartLevel();
+    public virtual void StartLevel()
+    {
+        var player = GameManager.Instance.Player;
+        player.transform.position = spawnPoint.position;
+        player.transform.rotation = spawnPoint.rotation;
+
+        ShowTitle();
+    }
 
     protected void ShowTitle()
     {
