@@ -27,6 +27,7 @@ public class CameraManager : MonoBehaviour
             Instance = this;
             camera = Instantiate(cameraPrefab);
 
+            this.transform.parent = null;
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(camera.gameObject);
         }
@@ -35,6 +36,17 @@ public class CameraManager : MonoBehaviour
             Debug.Log("Destroying duplicate CameraManager...");
             Destroy(this);
         }
+    }
+
+    public void Reset()
+    {
+        Color col = blackFader.color;
+        col.a = 0f;
+        blackFader.color = col;
+
+        col = deathFader.color;
+        col.a = 0f;
+        deathFader.color = col;
     }
 
     public void DeathFadeOut(float time)

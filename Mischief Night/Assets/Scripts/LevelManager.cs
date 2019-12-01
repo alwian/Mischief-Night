@@ -18,6 +18,9 @@ public abstract class LevelManager : MonoBehaviour
         player.transform.rotation = spawnPoint.rotation;
 
         ShowTitle();
+
+        DimensionManager.Cleanup();
+        CameraManager.Instance.Reset();
     }
 
     protected void ShowTitle()

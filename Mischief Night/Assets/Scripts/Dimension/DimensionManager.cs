@@ -31,16 +31,19 @@ public class DimensionManager : MonoBehaviour
 
     private void Awake()
     {
-        if (!Instance)
-            Instance = this;
-        else
+        if (Instance)
         {
             Debug.Log("Deleting duplicate DimensionManager");
             Destroy(this);
             return;
         }
+
+        Instance = this;
         currentDimension = Dimension.OVERWORLD;
         UpdateSky();
+
+        this.transform.parent = null;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void RegisterObject(DimensionedObject obj)
@@ -91,4 +94,12 @@ public class DimensionManager : MonoBehaviour
         }
     }
 
+    public static void Cleanup()
+    {
+        for (int i=dimensionObjects.Count - 1;  i >= 0; i--)
+        {
+            if (!dimensionObjects[i])
+                dimensionObjects.RemoveAt(i);
+        }
+    }
 }

@@ -47,10 +47,16 @@ public class PlayerController : MonoBehaviour
     {
         cameraDropped = true;
 
-        camera.gameObject.AddComponent<SphereCollider>();
+        var R = camera.GetComponent<Rigidbody>();
+        R.isKinematic = false;
+    }
 
-        var R = camera.gameObject.AddComponent<Rigidbody>();
-        R.constraints = RigidbodyConstraints.FreezeRotation;
+    public void PickupCamera()
+    {
+        cameraDropped = false;
+
+        var R = camera.GetComponent<Rigidbody>();
+        R.isKinematic = true;
     }
 
     private void Awake()

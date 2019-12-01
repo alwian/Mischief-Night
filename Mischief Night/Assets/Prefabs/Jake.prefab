@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9141996709898047107}
   - component: {fileID: 6343544085228314594}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: ExamineGui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 1685736992122495887}
   - component: {fileID: 2855468953444096968}
   - component: {fileID: 7918421755641125514}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Examine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 8654999288595633556}
   - component: {fileID: 600764960662986062}
   - component: {fileID: 7779089169213969587}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 835411412032979653}
   - component: {fileID: 1084279477081400801}
   - component: {fileID: 4098077535068383418}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 4123885674753109887}
   - component: {fileID: 4941556768897345732}
   - component: {fileID: 3116700112258625967}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: ObjectiveDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 8522908984729310697}
   - component: {fileID: 1723311353241790253}
   - component: {fileID: 6517239324845235672}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: PlayerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 3039540823087196927}
   - component: {fileID: 7359758175123797935}
   - component: {fileID: 3535105830840889891}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 6498305374561886109}
   - component: {fileID: 2305573524892231353}
   - component: {fileID: 7227438782962603876}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696890464845683312}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020645092553779735}
   - component: {fileID: 4663269019829614687}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: CrosshairManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 7307206511163576202}
   - component: {fileID: 6743002492252098648}
   - component: {fileID: 4870403573326982057}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: CurrentHp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 8326220203794673357}
   - component: {fileID: 2977420823339534495}
   - component: {fileID: 3238685248665249414}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Interaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 8210378063695459528}
   - component: {fileID: 7781516200705865229}
   - component: {fileID: 1692143265625947137}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Jake
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1155,7 +1155,7 @@ GameObject:
   - component: {fileID: 8210378064368494484}
   - component: {fileID: 8210378064368494487}
   - component: {fileID: 8210378064368494486}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

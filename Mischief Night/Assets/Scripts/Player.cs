@@ -80,6 +80,14 @@ public class Player : DimensionedObject, IDamagable
         StartCoroutine(DelayedReload());
     }
 
+    public void Unkill()
+    {
+        isDead = false;
+        controller.PickupCamera();
+        controller.enablePlayerControl = true;
+        Awake();
+    }
+
     IEnumerator DelayedReload()
     {
         CameraManager.Instance.DeathFadeOut(respawnDelay);

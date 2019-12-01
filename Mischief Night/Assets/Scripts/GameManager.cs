@@ -48,9 +48,15 @@ public class GameManager : MonoBehaviour
 
     public void Reload()
     {
-        Instance = null;
+        StartCoroutine(ReloadScene());
+    }
+
+    IEnumerator ReloadScene()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Destroy(this.gameObject);
+        yield return null;
+        Player.Unkill();
+        StartLevel();
     }
 
 }
