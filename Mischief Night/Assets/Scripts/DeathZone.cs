@@ -15,7 +15,7 @@ public class DeathZone : MonoBehaviour
     GameObject borderEnemy;
     Player player;
 
-    private void Awake()
+    private void Start()
     {
         player = GameManager.Instance.Player;
         borderEnemy = Instantiate(borderEnemyPrefab);

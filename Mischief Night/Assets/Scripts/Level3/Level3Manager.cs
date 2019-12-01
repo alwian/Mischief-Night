@@ -12,6 +12,10 @@ public class Level3Manager : LevelManager
     [SerializeField] List<StonePedestal> pedestals = new List<StonePedestal>();
     [SerializeField] MazeSoundManager manager;
 
+    public override void StartLevel()
+    {
+        base.StartLevel();
+    }
 
     private void Awake()
     {

@@ -14,6 +14,7 @@ public class Level2Manager : LevelManager
     [SerializeField] GameObject collectableActivationEffect;
     [SerializeField] GameObject collectablesCompleteEffect;
     [SerializeField] GameObject mineEntraceBlocker;
+    [SerializeField] GameObject lowfiLevel1;
 
     [Header("Objectives")]
     [SerializeField] string startObjective;
@@ -21,19 +22,13 @@ public class Level2Manager : LevelManager
     [SerializeField] string returnObjective;
     [SerializeField] string nextLevelObjective;
 
-
-
-    // Ensure effects and entrace blockage are in proper states
-    private void Awake()
+    private void Start()
     {
         collectablePreEffect.SetActive(true);
         collectablesCompleteEffect.SetActive(false);
         collectableActivationEffect.SetActive(false);
         mineEntraceBlocker.SetActive(true);
-    }
 
-    private void Start()
-    {
         foreach (var c in collectables)
         {
             c.gameObject.SetActive(false);
@@ -41,8 +36,13 @@ public class Level2Manager : LevelManager
         }
 
         foreach (var p in portals)
-            p.gameObject.SetActive(false);
+            p.gameObject.SetActive(false); 
+    }
 
+    public override void StartLevel()
+    {
+        base.StartLevel();
+        lowfiLevel1.SetActive(true);
         GameManager.Instance.Player.SetObjective(startObjective);
     }
 

@@ -12,33 +12,51 @@ public class GameManager : MonoBehaviour
     public Player Player { get; private set; }
 
     [SerializeField] Player playerPrefab;
-    [SerializeField] Transform spawnPoint;
-
-    [SerializeField] float levelTitleDisplayTime = 5f;
 
     private void Awake()
     {
-        if (!Instance)
-            Instance = this;
-        else
+        if (Instance)
         {
             Debug.Log("Destroying duplicate GameManager...");
             Destroy(this);
+            return;
         }
 
-        Player = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instance = this;
+        Player = Instantiate(playerPrefab);
+
+        this.transform.parent = null;
+        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(Player.gameObject);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        StartLevel();
+    }
+
+    public void StartLevel(AsyncOperation op)
+    {
+        StartLevel();
+    }
+    public void StartLevel()
+    {
         var lvlManager = GameObject.FindObjectOfType<LevelManager>();
         if (lvlManager)
-            lvlManager.ShowTitle(levelTitleDisplayTime);
+            lvlManager.StartLevel();
     }
 
     public void Reload()
     {
+        StartCoroutine(ReloadScene());
+    }
+
+    IEnumerator ReloadScene()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        yield return null;
+        Player.Unkill();
+        StartLevel();
     }
 
 }

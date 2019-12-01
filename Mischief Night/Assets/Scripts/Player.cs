@@ -57,6 +57,16 @@ public class Player : DimensionedObject, IDamagable
         objectiveGui.SetObjective(objective);
     }
 
+    public void EnableControl()
+    {
+        controller.enableCameraControl = true;
+        controller.enablePlayerControl= true;
+    }
+    public void DisableControl()
+    {
+        controller.enableCameraControl = false;
+        controller.enablePlayerControl = false;
+    }
 
     bool isDead = false;
     public void Kill()
@@ -68,6 +78,14 @@ public class Player : DimensionedObject, IDamagable
         controller.enablePlayerControl = false;
         controller.DropCamera();
         StartCoroutine(DelayedReload());
+    }
+
+    public void Unkill()
+    {
+        isDead = false;
+        controller.PickupCamera();
+        controller.enablePlayerControl = true;
+        Awake();
     }
 
     IEnumerator DelayedReload()
