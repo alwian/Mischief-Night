@@ -1,6 +1,7 @@
 ﻿// Patrol.cs
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 
 public class Patrol : DimensionedObject
@@ -8,10 +9,12 @@ public class Patrol : DimensionedObject
 
     public Transform[] points;
     private NavMeshAgent agent;
+    private Animator animator;
     private int nextPoint = 0;
-    private bool patrolling = true;
-    private bool onPath = true;
     public float searchRadius = 5;
+
+    private bool chasing;
+    private bool attacking;
 
     readonly Color[] colors = new Color[5]
     {
@@ -26,6 +29,9 @@ public class Patrol : DimensionedObject
     {
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = true;
+
+        animator = GetComponentInChildren<Animator>();
+        animator.SetFloat("speed", 1);
     }
 
     private void GoToNextPoint()
@@ -40,38 +46,50 @@ public class Patrol : DimensionedObject
 
     private void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f && patrolling)
+        if (!chasing && !agent.pathPending && agent.remainingDistance < 0.5f)
         {
-
             GoToNextPoint();
-            onPath = true;
         }
 
-        if (!patrolling && agent.remainingDistance < 0.5f)
+        if (chasing && !attacking && agent.remainingDistance < 3.0f)
         {
-            GoToNextPoint();
-            patrolling = true;
-
-
+            StartCoroutine(AttackPlayer());
         }
 
         DetectPlayer();
     }
 
+    IEnumerator AttackPlayer()
+    {
+        attacking = true;
+        agent.isStopped = true;
+        animator.SetBool("attack", true);
+        yield return null;
+        animator.SetBool("attack", false);
+        animator.SetFloat("speed", 1f);
+        agent.isStopped = false;
+        attacking = false;
+    }
+
     private void DetectPlayer()
     {
-        if (patrolling && onPath)
+        if (!attacking)
         {
             foreach (Collider hit in Physics.OverlapSphere(transform.position, searchRadius))
             {
                 if (hit.gameObject.tag == "Player")
                 {
-                    patrolling = false;
-                    onPath = false;
+                    chasing = true;
+                    animator.SetFloat("speed", 2f);
                     agent.SetDestination(hit.gameObject.transform.position);
+                    return;
                 }
             }
         }
+        
+
+        animator.SetFloat("speed", 1f);
+        chasing = false;
     }
 
     private void OnDrawGizmos()
@@ -103,7 +121,6 @@ public class Patrol : DimensionedObject
 
     protected override void SetUpsideDown()
     {
-        print("SWITCHED");
         gameObject.SetActive(false);
     }
 }

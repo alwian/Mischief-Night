@@ -15,6 +15,9 @@ public class HellHound : MonoBehaviour
     NavMeshAgent agent;
     Animator anim;
 
+    [SerializeField] float damage = 45f;
+    [SerializeField] float attackCooldown = 1.5f;
+
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -36,13 +39,18 @@ public class HellHound : MonoBehaviour
         anim.SetBool("Move", true);
     }
 
+    float attackTimer;
     private void OnCollisionEnter(Collision collision)
     {
-        var player = collision.collider.GetComponentInParent<Player>();
-        if (player)
+        if (attackTimer > Time.time)
+            return;
+
+        var damagable = collision.collider.GetComponentInParent<IDamagable>();
+        if (damagable.IsNull() == false)
         {
             anim.SetBool("Attack", true);
-            player.Kill();
+            attackTimer = Time.time + attackCooldown;
+            damagable.Damage(damage);
         }
     }
 }

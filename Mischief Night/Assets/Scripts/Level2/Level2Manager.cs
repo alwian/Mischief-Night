@@ -15,6 +15,14 @@ public class Level2Manager : LevelManager
     [SerializeField] GameObject collectablesCompleteEffect;
     [SerializeField] GameObject mineEntraceBlocker;
 
+    [Header("Objectives")]
+    [SerializeField] string startObjective;
+    [SerializeField] string collectObjective;
+    [SerializeField] string returnObjective;
+    [SerializeField] string nextLevelObjective;
+
+
+
     // Ensure effects and entrace blockage are in proper states
     private void Awake()
     {
@@ -34,6 +42,8 @@ public class Level2Manager : LevelManager
 
         foreach (var p in portals)
             p.gameObject.SetActive(false);
+
+        GameManager.Instance.Player.SetObjective(startObjective);
     }
 
     public void ActivateCollectables()
@@ -50,6 +60,8 @@ public class Level2Manager : LevelManager
 
         collectablePreEffect.SetActive(false);
         collectableActivationEffect.SetActive(true);
+
+        GameManager.Instance.Player.SetObjective(collectObjective);
     }
 
     private void OnCollection(Collectable collectable)
@@ -58,7 +70,10 @@ public class Level2Manager : LevelManager
             collectables.Remove(collectable);
 
         if (collectables.Count <= 0)
+        {
+            GameManager.Instance.Player.SetObjective(returnObjective);
             collectablesCompleteEffect.SetActive(true);
+        }
     }
 
     public void TryActivateAltar(Altar altar)
@@ -67,6 +82,7 @@ public class Level2Manager : LevelManager
         {
             mineEntraceBlocker.SetActive(false);
             altar.Activate();
+            GameManager.Instance.Player.SetObjective(nextLevelObjective);
         }
     }
 }
