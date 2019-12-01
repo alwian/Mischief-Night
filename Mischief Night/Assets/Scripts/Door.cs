@@ -1,5 +1,7 @@
 ﻿/*
  * Author: Colton Campbell (B00693513)
+ * 
+ * Edited by: Amanda Norman (B00850615)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -12,6 +14,9 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] Vector3 closeRotation;
     [SerializeField] Transform hingeTransform;
     [SerializeField] float swingTime = 1f;
+
+    private new AudioSource audio; /* Added audio */
+    [SerializeField] AudioClip swingClip;
 
     bool doorOpen = false;
 
@@ -31,6 +36,11 @@ public class Door : MonoBehaviour, IInteractable
             targetRot = Quaternion.Euler(openRotation);
         else
             targetRot = Quaternion.Euler(closeRotation);
+
+        /* Get Game Object Audio */
+        audio = gameObject.GetComponent<AudioSource>();
+        audio.clip = swingClip;
+        audio.Play();/* Play audio noise */
 
         float timer = 0f;
         while(timer < swingTime)

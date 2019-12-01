@@ -2,8 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelTwoAudio : MonoBehaviour
+public class LevelTwoAudio : AbstractAudio
 {
+    protected override void Next()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void Play()
+    {
+        throw new System.NotImplementedException();
+    }
+
     // Start is called before the first frame update
     void Start()
     {

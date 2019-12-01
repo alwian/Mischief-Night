@@ -3,7 +3,9 @@ guid: dce2c548471efa34e9178d20985df035
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - hingeTransform: {instanceID: 0}
+  - swingClip: {fileID: 8300000, guid: af24536f0be3f1c478f92ec84e39dae9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
