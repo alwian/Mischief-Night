@@ -4,17 +4,24 @@ using UnityEngine;
 
 public abstract class LevelManager : MonoBehaviour
 {
-    [SerializeField] Canvas levelTitle;
+    [Header("Player Spawn")]
+    [SerializeField] protected Transform spawnPoint;
 
-    public void ShowTitle(float time)
+    [Header("Level Title")]
+    [SerializeField] Canvas levelTitle;
+    [SerializeField] float titleDisplayTime = 5f;
+
+    public abstract void StartLevel();
+
+    protected void ShowTitle()
     {
-        StartCoroutine(ShowLevelTitle(time));
+        StartCoroutine(ShowLevelTitle());
     }
 
-    IEnumerator ShowLevelTitle(float time)
+    IEnumerator ShowLevelTitle()
     {
         levelTitle.gameObject.SetActive(true);
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(titleDisplayTime);
         levelTitle.gameObject.SetActive(false);
     }
 }

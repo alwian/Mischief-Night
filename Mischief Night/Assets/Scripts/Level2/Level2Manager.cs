@@ -21,19 +21,13 @@ public class Level2Manager : LevelManager
     [SerializeField] string returnObjective;
     [SerializeField] string nextLevelObjective;
 
-
-
-    // Ensure effects and entrace blockage are in proper states
-    private void Awake()
+    private void Start()
     {
         collectablePreEffect.SetActive(true);
         collectablesCompleteEffect.SetActive(false);
         collectableActivationEffect.SetActive(false);
         mineEntraceBlocker.SetActive(true);
-    }
 
-    private void Start()
-    {
         foreach (var c in collectables)
         {
             c.gameObject.SetActive(false);
@@ -41,8 +35,16 @@ public class Level2Manager : LevelManager
         }
 
         foreach (var p in portals)
-            p.gameObject.SetActive(false);
+            p.gameObject.SetActive(false); 
+    }
 
+    public override void StartLevel()
+    {
+        var player = GameManager.Instance.Player;
+        player.transform.position = spawnPoint.position;
+        player.transform.rotation = spawnPoint.rotation;
+
+        ShowTitle();
         GameManager.Instance.Player.SetObjective(startObjective);
     }
 

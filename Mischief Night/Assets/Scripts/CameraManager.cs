@@ -12,6 +12,7 @@ public class CameraManager : MonoBehaviour
     new Camera camera;
 
     [Header("Required References")]
+    [SerializeField] Camera cameraPrefab;
     [SerializeField] Image blackFader;
     [SerializeField] Image deathFader;
 
@@ -22,14 +23,18 @@ public class CameraManager : MonoBehaviour
     private void Awake()
     {
         if (!Instance)
+        {
             Instance = this;
+            camera = Instantiate(cameraPrefab);
+
+            DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(camera.gameObject);
+        }
         else
         {
             Debug.Log("Destroying duplicate CameraManager...");
             Destroy(this);
         }
-
-        camera = Camera.main;
     }
 
     public void DeathFadeOut(float time)

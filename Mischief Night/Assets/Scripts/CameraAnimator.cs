@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 [System.Serializable]
 public struct PathSegment
@@ -24,19 +24,13 @@ public class CameraAnimator : MonoBehaviour
         camera = Camera.main;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-            StartAnimation();
-    }
-
-    public void StartAnimation()
+    public void StartAnimation(UnityAction callback)
     {
         GameManager.Instance.Player.DisableControl();
-        StartCoroutine(Animate());
+        StartCoroutine(Animate(callback));
     }
 
-    IEnumerator Animate()
+    IEnumerator Animate(UnityAction callback)
     {
         camera.transform.position = pathSegments[0].transform.position;
         for (int i=0; i<pathSegments.Length - 1; i++)
@@ -56,6 +50,7 @@ public class CameraAnimator : MonoBehaviour
         }
 
         FinishAnimation();
+        callback?.Invoke();
     }
 
     private void FinishAnimation()

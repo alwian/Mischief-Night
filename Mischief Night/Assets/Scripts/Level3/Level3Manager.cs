@@ -12,7 +12,6 @@ public class Level3Manager : LevelManager
     [SerializeField] List<StonePedestal> pedestals = new List<StonePedestal>();
     [SerializeField] MazeSoundManager manager;
 
-
     private void Awake()
     {
         foreach (var pedestal in pedestals)
@@ -43,5 +42,10 @@ public class Level3Manager : LevelManager
     private void OpenFinalDoor()
     {
         finalDoor.SetActive(false);
+    }
+
+    public override void StartLevel()
+    {
+        ShowTitle();
     }
 }
