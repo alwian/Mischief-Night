@@ -1171,7 +1171,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c3fe77368de0e634eb94a488c4134e6d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3180,7 +3180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 269747551}
   - component: {fileID: 269747552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PointLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15085,7 +15085,7 @@ GameObject:
   - component: {fileID: 1462746484}
   - component: {fileID: 1462746479}
   - component: {fileID: 1462746480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerNodeCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17527,8 +17527,8 @@ MonoBehaviour:
   - {fileID: 661378498}
   - {fileID: 1925044097}
   manager: {fileID: 1141015830}
-  startObjective: 
-  endObjective: 
+  startObjective: Put the ritual stones on their pedestals
+  endObjective: End the Nightmare
 --- !u!114 &1690922123 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 346544727722348257, guid: ce7db91dd5834214c993b431db1d0261,
@@ -20324,6 +20324,16 @@ PrefabInstance:
       propertyPath: connections.Array.data[1]
       value: 
       objectReference: {fileID: 1532656041}
+    - target: {fileID: 5295138951514290888, guid: ce7db91dd5834214c993b431db1d0261,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 23.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295138951514290888, guid: ce7db91dd5834214c993b431db1d0261,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 20.97
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce7db91dd5834214c993b431db1d0261, type: 3}
 --- !u!4 &1919447975 stripped
