@@ -4,25 +4,21 @@ using UnityEngine;
 
 public class LockDoor : MonoBehaviour
 {
-    public Collider lockTrigger;
-    private Door door;
+    public Door[] doorsToLock;
 
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        door = GetComponent<Door>();
-        print(door == null);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            print("Lock Doors");
-            if (door.doorOpen)
+            foreach (Door door in doorsToLock)
             {
-                door.Interact();
+                if (door.doorOpen)
+                {
+                    door.Interact();
+                    door.locked = true;
+                }
+
             }
-            door.locked = true;
         }
     }
 }
