@@ -11,10 +11,19 @@ public class Level3Manager : LevelManager
     [SerializeField] GameObject finalDoor;
     [SerializeField] List<StonePedestal> pedestals = new List<StonePedestal>();
     [SerializeField] MazeSoundManager manager;
+    [SerializeField] GameObject deathbringerPrefab;
+    [SerializeField] Transform deathbringerSpawn;
+    [SerializeField] Lantern lantern;
 
     [Header("Objectives")]
     [SerializeField] string startObjective;
     [SerializeField] string endObjective;
+
+    [Header("Time Limit")]
+    [SerializeField] float timeLimit = 180f;
+
+    bool levelStarted = false;
+    float timeLeft;
 
     public override void StartLevel()
     {
@@ -25,6 +34,7 @@ public class Level3Manager : LevelManager
         CM.FadeIn(1.5f);
 
         GameManager.Instance.Player.SetObjective(startObjective);
+        levelStarted = true;
     }
 
     private void Awake()
@@ -33,6 +43,31 @@ public class Level3Manager : LevelManager
             pedestal.OnPlace += OnPlacement;
 
         ActivateRandomPedestal();
+        timeLeft = timeLimit;
+    }
+
+    private void Update()
+    {
+        if (!levelStarted)
+            return;
+
+        timeLeft -= Time.deltaTime;
+        lantern.SetOilLevel(timeLeft / timeLimit);
+
+        if (timeLeft <= 0)
+        {
+            ActivateDeath();
+        }
+    }
+
+    bool deathActivated = false;
+    private void ActivateDeath()
+    {
+        if (deathActivated)
+            return;
+
+        Instantiate(deathbringerPrefab, deathbringerSpawn.position, deathbringerSpawn.rotation);
+        deathActivated = true;
     }
 
     private void ActivateRandomPedestal()
