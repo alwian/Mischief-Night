@@ -19,7 +19,7 @@ public class Door : MonoBehaviour, IInteractable
     private new AudioSource audio; /* Added audio */
     [SerializeField] AudioClip swingClip;
 
-    bool doorOpen = false;
+    public bool doorOpen = false;
 
     public void Interact()
     {
