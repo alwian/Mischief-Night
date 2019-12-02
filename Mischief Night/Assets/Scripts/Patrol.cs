@@ -3,10 +3,14 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
 
+/*
+* Author: Alex Anderson
+* 
+* Edited by: Amanda Norman
+*/
 
 public class Patrol : DimensionedObject
 {
-
     public Transform[] points;
     private NavMeshAgent agent;
     private Animator animator;
@@ -15,6 +19,15 @@ public class Patrol : DimensionedObject
 
     private bool chasing;
     private bool attacking;
+
+    private enum AnimateState //Enumerator variables made to create animation states for audio use
+    {
+        Walk = 0,
+        Run = 1,
+        Attack = 2
+    }
+
+    private AnimateState state;
 
     readonly Color[] colors = new Color[5]
     {
@@ -31,6 +44,7 @@ public class Patrol : DimensionedObject
         agent.autoBraking = true;
 
         animator = GetComponentInChildren<Animator>();
+        state = AnimateState.Walk;
         animator.SetFloat("speed", 1);
     }
 
@@ -49,6 +63,7 @@ public class Patrol : DimensionedObject
         if (!chasing && !agent.pathPending && agent.remainingDistance < 0.5f)
         {
             GoToNextPoint();
+            state = AnimateState.Walk;
         }
 
         if (chasing && !attacking && agent.remainingDistance < 3.0f)
@@ -63,6 +78,7 @@ public class Patrol : DimensionedObject
     {
         attacking = true;
         agent.isStopped = true;
+        state = AnimateState.Attack;
         animator.SetBool("attack", true);
         yield return null;
         animator.SetBool("attack", false);
@@ -81,6 +97,7 @@ public class Patrol : DimensionedObject
                 {
                     chasing = true;
                     animator.SetFloat("speed", 2f);
+                    //state = AnimateState.Run;
                     agent.SetDestination(hit.gameObject.transform.position);
                     return;
                 }
@@ -122,5 +139,10 @@ public class Patrol : DimensionedObject
     protected override void SetUpsideDown()
     {
         gameObject.SetActive(false);
+    }
+
+    public string GetState()
+    {
+        return state.ToString();
     }
 }
