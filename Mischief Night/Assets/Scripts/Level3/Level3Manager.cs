@@ -12,9 +12,19 @@ public class Level3Manager : LevelManager
     [SerializeField] List<StonePedestal> pedestals = new List<StonePedestal>();
     [SerializeField] MazeSoundManager manager;
 
+    [Header("Objectives")]
+    [SerializeField] string startObjective;
+    [SerializeField] string endObjective;
+
     public override void StartLevel()
     {
         base.StartLevel();
+
+        var CM = CameraManager.Instance;
+        CM.SetFade(1.0f);
+        CM.FadeIn(1.5f);
+
+        GameManager.Instance.Player.SetObjective(startObjective);
     }
 
     private void Awake()
@@ -47,5 +57,6 @@ public class Level3Manager : LevelManager
     private void OpenFinalDoor()
     {
         finalDoor.SetActive(false);
+        GameManager.Instance.Player.SetObjective(endObjective);
     }
 }
