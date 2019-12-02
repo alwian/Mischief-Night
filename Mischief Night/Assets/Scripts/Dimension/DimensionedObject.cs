@@ -17,6 +17,10 @@ public abstract class DimensionedObject : MonoBehaviour
 
     public void SetDimension(Dimension d)
     {
+        // Guard against deleted objects
+        if (!this)
+            return;
+
         currentDimension = d;
 
         if (currentDimension == Dimension.OVERWORLD)

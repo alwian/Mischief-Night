@@ -85,6 +85,11 @@ public class Level2Manager : LevelManager
             mineEntraceBlocker.SetActive(false);
             levelTransitionZone.SetActive(true);
             altar.Activate();
+
+            foreach (var p in portals)
+                Destroy(p.gameObject);
+
+            DimensionManager.Instance.SetDimension(Dimension.OVERWORLD);
             GameManager.Instance.Player.SetObjective(nextLevelObjective);
         }
     }
