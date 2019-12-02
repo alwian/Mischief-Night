@@ -15,6 +15,7 @@ public class Level2Manager : LevelManager
     [SerializeField] GameObject collectablesCompleteEffect;
     [SerializeField] GameObject mineEntraceBlocker;
     [SerializeField] GameObject lowfiLevel1;
+    [SerializeField] GameObject levelTransitionZone;
 
     [Header("Objectives")]
     [SerializeField] string startObjective;
@@ -28,6 +29,7 @@ public class Level2Manager : LevelManager
         collectablesCompleteEffect.SetActive(false);
         collectableActivationEffect.SetActive(false);
         mineEntraceBlocker.SetActive(true);
+        levelTransitionZone.SetActive(false);
 
         foreach (var c in collectables)
         {
@@ -81,7 +83,13 @@ public class Level2Manager : LevelManager
         if (collectables.Count <= 0)
         {
             mineEntraceBlocker.SetActive(false);
+            levelTransitionZone.SetActive(true);
             altar.Activate();
+
+            foreach (var p in portals)
+                Destroy(p.gameObject);
+
+            DimensionManager.Instance.SetDimension(Dimension.OVERWORLD);
             GameManager.Instance.Player.SetObjective(nextLevelObjective);
         }
     }

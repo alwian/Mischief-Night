@@ -9,11 +9,13 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
-public class HellHound : MonoBehaviour
+public class HellHound : DimensionedObject
 {
     Player target;
     NavMeshAgent agent;
     Animator anim;
+
+    Dimension myDimension;
 
     [SerializeField] float damage = 45f;
     [SerializeField] float attackCooldown = 1.5f;
@@ -26,6 +28,8 @@ public class HellHound : MonoBehaviour
         agent.speed *= Random.Range(1f, 1.25f);
 
         anim = gameObject.GetComponent<Animator>();
+
+        myDimension = DimensionManager.Instance.CurrentDimension;
     }
 
     private void Update()
@@ -52,5 +56,15 @@ public class HellHound : MonoBehaviour
             attackTimer = Time.time + attackCooldown;
             damagable.Damage(damage);
         }
+    }
+
+    protected override void SetOverworld()
+    {
+        this.gameObject.SetActive(myDimension == Dimension.OVERWORLD);
+    }
+
+    protected override void SetUpsideDown()
+    {
+        this.gameObject.SetActive(myDimension == Dimension.UPSIDE_DOWN);
     }
 }

@@ -55,6 +55,15 @@ public class CameraManager : MonoBehaviour
         StartCoroutine(Fade(time, deathFader, deathFaderOpacity));
     }
 
+    public void SetFade(float opacity)
+    {
+        opacity = Mathf.Clamp(opacity, 0f, 1f);
+
+        var col = blackFader.color;
+        col.a = opacity;
+        blackFader.color = col;
+    }
+
     public void FadeOut(float time)
     {
         StopAllCoroutines();

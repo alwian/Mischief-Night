@@ -29,6 +29,7 @@ public class LevelTransition : MonoBehaviour
             var op = SceneManager.LoadSceneAsync(nextLevel, LoadSceneMode.Additive);
             op.completed += SetActive;
 
+            GameManager.Instance.Player.SetObjective("");
             cameraAnim.StartAnimation(FinishTransition);
         }
     }

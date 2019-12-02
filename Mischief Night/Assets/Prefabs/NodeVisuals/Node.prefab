@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 346544727722348257}
   - component: {fileID: 5295138951514290888}
   - component: {fileID: 8670464746759236973}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
+  m_Size: {x: 3, y: 3, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8670464746759236973
 Rigidbody:
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 1407271968544404836}
   - component: {fileID: 6322641843154198719}
   - component: {fileID: 4719838020944390637}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: NodeVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -965,7 +965,7 @@ MonoBehaviour:
   healthGui: {fileID: 3039540823087196927}
   objectiveGui: {fileID: 1719812752493018182}
   maxHealth: 100
-  healthLossRate: 1.5
+  healthLossRate: 1.1
   healthRecoveryRate: 12
   healthRecoveryDelay: 5
   healthLossDelay: 15
