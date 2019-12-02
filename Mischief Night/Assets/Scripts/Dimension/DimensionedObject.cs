@@ -17,9 +17,6 @@ public abstract class DimensionedObject : MonoBehaviour
 
     public void SetDimension(Dimension d)
     {
-        if (d == currentDimension)
-            return;
-
         currentDimension = d;
 
         if (currentDimension == Dimension.OVERWORLD)
