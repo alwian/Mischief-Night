@@ -14,9 +14,11 @@ public class Level3Manager : LevelManager
     [SerializeField] GameObject deathbringerPrefab;
     [SerializeField] Transform deathbringerSpawn;
     [SerializeField] Lantern lantern;
+    [SerializeField] AudioSource panicAudio;
 
     [Header("Objectives")]
     [SerializeField] string startObjective;
+    [SerializeField] string panicObjective;
     [SerializeField] string endObjective;
 
     [Header("Time Limit")]
@@ -65,6 +67,9 @@ public class Level3Manager : LevelManager
     {
         if (deathActivated)
             return;
+
+        panicAudio.Play();
+        GameManager.Instance.Player.SetObjective(panicObjective);
 
         Instantiate(deathbringerPrefab, deathbringerSpawn.position, deathbringerSpawn.rotation);
         deathActivated = true;

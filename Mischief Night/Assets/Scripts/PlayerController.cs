@@ -7,8 +7,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    private AudioSource audioSource;
-    public AudioClip stepSound;
+    [SerializeField] AudioSource footstepAudioSource;
+    [SerializeField] AudioClip[] footsteps;
 
     [Header("Camera Options")]
     [SerializeField] float sensitivity = 1f;
@@ -70,8 +70,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
+    {   
         InvokeRepeating("WalkSound", 0f, 0.5f);
     }
 
@@ -79,7 +78,8 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
         {
-            audioSource.PlayOneShot(stepSound);
+            int i = Random.Range(0, footsteps.Length);
+            footstepAudioSource.PlayOneShot(footsteps[i]);
         } 
     }
 

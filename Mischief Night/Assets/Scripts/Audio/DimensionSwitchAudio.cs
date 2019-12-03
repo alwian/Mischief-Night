@@ -10,11 +10,11 @@ using UnityEngine;
 
 public class DimensionSwitchAudio : DimensionedObject
 {
-    private AudioSource audio;
-    public AudioClip woosh;
+    [SerializeField] AudioSource dimensionSwitchAudioSource;
+
     protected override void SetOverworld()
     {
-        audio.Play();
+        dimensionSwitchAudioSource.Play();
     }
 
     protected override void SetUpsideDown()
@@ -27,6 +27,6 @@ public class DimensionSwitchAudio : DimensionedObject
     {
         audio = GetComponent<AudioSource>();
         audio.clip = woosh;
+        dimensionSwitchAudioSource.Play();
     }
-
 }

@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*
+ * Author: Colton Campbell (B00693513)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +12,7 @@ public class Lantern : MonoBehaviour
     [Header("Required References")]
     [SerializeField] Transform oilScaler;
     [SerializeField] GameObject fire;
+    [SerializeField] GameObject nightVision;
 
     [Header("Held Options")]
     [SerializeField] Vector3 positionOffset;
@@ -25,7 +29,10 @@ public class Lantern : MonoBehaviour
         oilScaler.localScale = scale;
 
         if (oilLevel <= 0f)
+        {
             fire.SetActive(false);
+            nightVision.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

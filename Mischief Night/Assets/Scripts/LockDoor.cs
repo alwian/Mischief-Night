@@ -14,10 +14,9 @@ public class LockDoor : MonoBehaviour
             {
                 if (door.doorOpen)
                 {
-                    door.Interact();
-                    door.locked = true;
+                    door.Interact(); 
                 }
-
+                door.locked = true;
             }
         }
     }
