@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class Level2Manager : LevelManager
 {
+    [SerializeField] AudioSource audioSource;
+
     [Header("Required References")]
     [SerializeField] List<Collectable> collectables = new List<Collectable>();
     [SerializeField] List<DimensionPortal> portals = new List<DimensionPortal>();
@@ -25,6 +27,8 @@ public class Level2Manager : LevelManager
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         collectablePreEffect.SetActive(true);
         collectablesCompleteEffect.SetActive(false);
         collectableActivationEffect.SetActive(false);
@@ -82,6 +86,7 @@ public class Level2Manager : LevelManager
     {
         if (collectables.Count <= 0)
         {
+            audioSource.Play();
             mineEntraceBlocker.SetActive(false);
             levelTransitionZone.SetActive(true);
             altar.Activate();
