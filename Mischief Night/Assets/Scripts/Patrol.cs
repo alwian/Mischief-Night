@@ -8,6 +8,10 @@ public class Patrol : DimensionedObject
 {
 
     public Transform[] points;
+    public AudioClip[] patrolSounds;
+    public AudioClip[] attackSounds;
+
+    private AudioSource audioSource;
     private NavMeshAgent agent;
     private Animator animator;
     private int nextPoint = 0;
@@ -27,6 +31,9 @@ public class Patrol : DimensionedObject
 
     protected void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        StartCoroutine(StartAudio());
+
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = true;
 
@@ -57,6 +64,22 @@ public class Patrol : DimensionedObject
         }
 
         DetectPlayer();
+    }
+
+    IEnumerator StartAudio()
+    {
+        while(true)
+        {
+            if (attacking)
+            {
+                audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
+            } else
+            {
+                audioSource.clip = patrolSounds[Random.Range(0, attackSounds.Length)];
+            }
+            audioSource.Play();
+            yield return new WaitForSeconds(audioSource.clip.length);
+        }
     }
 
     IEnumerator AttackPlayer()

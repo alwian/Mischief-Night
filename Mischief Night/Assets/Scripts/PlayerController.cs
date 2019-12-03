@@ -7,6 +7,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip stepSound;
+
     [Header("Camera Options")]
     [SerializeField] float sensitivity = 1f;
     [SerializeField] Vector3 cameraOffset;
@@ -64,6 +67,20 @@ public class PlayerController : MonoBehaviour
         this.player = GetComponent<Player>();
         this.rigidbody = GetComponent<Rigidbody>();
         this.camera = Camera.main;
+    }
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        InvokeRepeating("WalkSound", 0f, 0.5f);
+    }
+
+    private void WalkSound()
+    {
+        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
+        {
+            audioSource.PlayOneShot(stepSound);
+        } 
     }
 
     float cameraRotation = 0f;
