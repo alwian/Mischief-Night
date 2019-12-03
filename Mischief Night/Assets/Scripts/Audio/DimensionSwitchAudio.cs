@@ -19,14 +19,12 @@ public class DimensionSwitchAudio : DimensionedObject
 
     protected override void SetUpsideDown()
     {
-        audio.Play();
+        dimensionSwitchAudioSource.Play();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
-        audio.clip = woosh;
         dimensionSwitchAudioSource.Play();
     }
 }
