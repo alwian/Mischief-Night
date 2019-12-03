@@ -33,17 +33,4 @@ public class DimensionTextureUpdate : DimensionedObject
             l.color = Color.red;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Comma))
-        {
-            DimensionManager.Instance.SetDimension(Dimension.UPSIDE_DOWN);
-        }
-        if (Input.GetKey(KeyCode.Period))
-        {
-            DimensionManager.Instance.SetDimension(Dimension.OVERWORLD);
-        }
-    }
 }

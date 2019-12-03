@@ -20,6 +20,7 @@ public class LockDoor : MonoBehaviour
                     door.Interact(); 
                 }
                 door.locked = true;
+                GameManager.Instance.Player.SetObjective("Escape the school, follow the whispers.");
             }
         }
     }
