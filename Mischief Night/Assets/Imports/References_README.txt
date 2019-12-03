@@ -1,8 +1,5 @@
 A list of references for assets that were not created by the development team.
 
-NavmeshComponents
-	https://github.com/Unity-Technologies/NavMeshComponents
-
 AllSky Free - Skybox assets taken from:
 	https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014
 
