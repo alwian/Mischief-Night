@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*
+ * Author: Alex Anderson (B00850616)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
