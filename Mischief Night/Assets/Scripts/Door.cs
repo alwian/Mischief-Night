@@ -14,17 +14,21 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] Vector3 closeRotation;
     [SerializeField] Transform hingeTransform;
     [SerializeField] float swingTime = 1f;
+    [SerializeField] public bool locked;
 
     private new AudioSource audio; /* Added audio */
     [SerializeField] AudioClip swingClip;
 
-    bool doorOpen = false;
+    public bool doorOpen = false;
 
     public void Interact()
     {
-        doorOpen = !doorOpen;
-        StopAllCoroutines();
-        StartCoroutine(SwingDoor());
+        if (!locked)
+        {
+            doorOpen = !doorOpen;
+            StopAllCoroutines();
+            StartCoroutine(SwingDoor());
+        }
     }
 
     private IEnumerator SwingDoor()
