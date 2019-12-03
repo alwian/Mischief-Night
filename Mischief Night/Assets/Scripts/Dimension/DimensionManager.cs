@@ -101,5 +101,7 @@ public class DimensionManager : MonoBehaviour
             if (!dimensionObjects[i])
                 dimensionObjects.RemoveAt(i);
         }
+
+        DimensionManager.Instance.SetDimension(Dimension.OVERWORLD);
     }
 }
