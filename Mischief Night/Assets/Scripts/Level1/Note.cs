@@ -27,6 +27,7 @@ public class Note : DimensionedObject, IExaminable
             door.locked = true;
         }
         DimensionManager.Instance.SetDimension(Dimension.OVERWORLD);
+        GameManager.Instance.Player.SetObjective("Escape through the gymnasium.");
         return "January 23rd: It's in the woods, behind the school, I don't know what it is, but it must be destroyed, it's the only way.";
     }
 
