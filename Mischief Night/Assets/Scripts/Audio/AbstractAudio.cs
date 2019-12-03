@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-
 /*
  * Author: Amanda Norman (B00850615)
  *

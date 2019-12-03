@@ -1,6 +1,6 @@
 ﻿/*
  * Authors: Colton Campbell (B00693513)
- *          Amanda... (B00...)
+ *          Amanda Norman (B00850615)
  */
 using System.Collections;
 using System.Collections.Generic;
