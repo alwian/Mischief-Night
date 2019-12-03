@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overworldSky: {fileID: 2100000, guid: 9af23ba5fa5364ff598888460e0e2759, type: 2}
-  netherSky: {fileID: 2100000, guid: b4f152e0498484391a9f0d5a1facf03b, type: 2}
+  netherSky: {fileID: 2100000, guid: c82a334cf5a5e47978749c210cee72a7, type: 2}
   overworldAmbient: {r: 0.039215688, g: 0.101960786, b: 0.14901961, a: 1}
   netherAmbient: {r: 0.6132076, g: 0.056192134, b: 0, a: 1}
