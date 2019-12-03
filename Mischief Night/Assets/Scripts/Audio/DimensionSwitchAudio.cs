@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Author: Amanda Norman (B00850615)
+*
+* Description: Audio manager class to manage the audio for changing dimensions in game
+*/
+
 public class DimensionSwitchAudio : DimensionedObject
 {
     private AudioSource audio;
@@ -23,9 +29,4 @@ public class DimensionSwitchAudio : DimensionedObject
         audio.clip = woosh;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
