@@ -1,7 +1,8 @@
 ﻿/*
  * Author: Colton Campbell (B00693513)
  * 
- * Edited by: Amanda Norman (B00850615)
+ * Modified by: Amanda Norman (B00850615)
+ *              Alex Anderson (B00850616)  
  */
 using System.Collections;
 using System.Collections.Generic;

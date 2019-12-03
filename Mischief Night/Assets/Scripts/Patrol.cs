@@ -1,4 +1,6 @@
-﻿// Patrol.cs
+﻿/*
+ * Author: Alex Anderson (B00850616)
+ */
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
@@ -6,7 +8,7 @@ using System.Collections;
 
 public class Patrol : DimensionedObject
 {
-
+    [Header("Required References")]
     public Transform[] points;
     public AudioClip[] patrolSounds;
     public AudioClip[] attackSounds;

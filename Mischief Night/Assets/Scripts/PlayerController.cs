@@ -1,5 +1,6 @@
 ﻿/*
  * Author: Colton Campbell (B00693513)
+ * Modified By: Alex Anderson (B00850616)
  */
 using UnityEngine;
 
