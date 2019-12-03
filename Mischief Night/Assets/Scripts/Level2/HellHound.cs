@@ -11,6 +11,9 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Animator))]
 public class HellHound : DimensionedObject
 {
+    public AudioClip[] audioClips;
+    private AudioSource audioSource;
+
     Player target;
     NavMeshAgent agent;
     Animator anim;
@@ -22,6 +25,9 @@ public class HellHound : DimensionedObject
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        StartCoroutine(StartAudio());
+
         agent = GetComponent<NavMeshAgent>();
         target = GameManager.Instance.Player;
 
@@ -36,6 +42,23 @@ public class HellHound : DimensionedObject
     {
         agent.SetDestination(target.transform.position);
         Animate();
+    }
+
+    private IEnumerator StartAudio()
+    {
+        while (true)
+        {
+            if (Random.Range(0,4) == 0)
+            {
+                audioSource.clip = audioClips[Random.Range(0, audioClips.Length)];
+                audioSource.Play();
+                
+            } else
+            {
+                yield return new WaitForSeconds(5);
+            }
+            
+        }
     }
 
     private void Animate()
