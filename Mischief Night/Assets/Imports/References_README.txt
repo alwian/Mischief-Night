@@ -24,6 +24,35 @@ Ambient Horror SFX - Used for game audio:
 Hellhound Sketchfab 3D - Used for Hellhound assets and animations:
 	https://sketchfab.com/3d-models/hellhound-18a5ae069dc64907842c82187b1eaea5
 
+Treadmill Model - Used within the school gym:
+	https://www.turbosquid.com/FullPreview/Index.cfm/ID/1166206
+
+Gym Equipment Model - Used within the school gym:
+	https://www.turbosquid.com/FullPreview/Index.cfm/ID/1079399
+
+Zombie sound effects - Used for Soulbringer audio:
+	http://www.videogamesoundboards.com/nz/
+
+Hellhound sound effects - Used for Hellhound audio:
+	http://www.realmofdarkness.net/sb/nz-hh/
+
+Horror School Models - Used inside school classrooms:
+	https://assetstore.unity.com/packages/3d/props/furniture/horror-school-props-112589
+
+EdgeDetect-PostProcessingUnity - Used for outlining objects:
+	https://github.com/jean-moreno/EdgeDetect-PostProcessingUnity
+
+Unity NavMeshComponents - Used for AI navigation:
+	https://github.com/Unity-Technologies/NavMeshComponents
+
+Boulder sound effect - Used for mine entrance in level 2:
+	https://www.youtube.com/watch?v=RqoD414tl2A
+
+Footstep sounds - Used for character walking:
+	https://freesound.org/browse/tags/footsteps/
+
+
+
 
 
 
