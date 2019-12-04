@@ -96,6 +96,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1049259524030375922, guid: 69003687ad739464cb8ee3cfb208b2fa,
+        type: 3}
+      propertyPath: m_Speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049259524030375922, guid: 69003687ad739464cb8ee3cfb208b2fa,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823272277314995987, guid: 69003687ad739464cb8ee3cfb208b2fa,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8690354813488496725, guid: 69003687ad739464cb8ee3cfb208b2fa,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -110,16 +125,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 22.5024
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259524030375922, guid: 69003687ad739464cb8ee3cfb208b2fa,
-        type: 3}
-      propertyPath: m_Speed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049259524030375922, guid: 69003687ad739464cb8ee3cfb208b2fa,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1049259524030375923, guid: 69003687ad739464cb8ee3cfb208b2fa, type: 3}
